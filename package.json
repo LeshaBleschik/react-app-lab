@@ -78,5 +78,17 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "CI=true npm test",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,html,md,tsx,jsx,sccs}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
