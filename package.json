@@ -67,7 +67,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "json-server": "nodemon server-mock/server.ts --ignore db.json",
@@ -77,18 +77,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "CI=true npm test",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,html,md,tsx,jsx,sccs}": [
-      "prettier --single-quote --write",
-      "git add"
     ]
   }
 }

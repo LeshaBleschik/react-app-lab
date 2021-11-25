@@ -1,6 +1,9 @@
 import React from "react"
-const abc = false
 
-const App = () => <div>Hello!</div>
+const App = () => (
+  <div>
+    Learn React <span></span>
+  </div>
+)
 
 export default App
