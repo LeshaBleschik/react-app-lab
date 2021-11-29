@@ -1,0 +1,7 @@
+@import "./variables";
+
+@mixin hoverAndFocusEffect {
+  background-color: $hover-bgc;
+  border-bottom: 5px solid #000;
+  outline: none;
+}

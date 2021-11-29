@@ -1,0 +1,8 @@
+export const HOME_PAGE = "/"
+export const ABOUT_PAGE = "/about"
+export const SIGN_IN_PAGE = "/sign-in"
+export const SIGN_UP_PAGE = "/sign-up"
+export const PRODUCT_GAMES_PAGE = "/product/games"
+export const PRODUCT_CONSOLES_PAGE = "/product/consoles"
+export const PRODUCT_ACCESSORIES_PAGE = "/product/game-accessories"
+export const WRONG_PATH = "*"
