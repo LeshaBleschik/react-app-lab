@@ -5,9 +5,9 @@ import {
   SIGN_IN_PAGE,
   SIGN_UP_PAGE,
   ABOUT_PAGE,
-  PRODUCT_GAMES_PAGE,
-  PRODUCT_CONSOLES_PAGE,
-  PRODUCT_ACCESSORIES_PAGE,
+  PRODUCT_PC_GAMES_PAGE,
+  PRODUCT_PLAYSTATION_5_GAMES_PAGE,
+  PRODUCT_XBOX_ONE_GAMES_PAGE,
 } from "routes"
 import "./header.scss"
 
@@ -32,21 +32,24 @@ const Header = () => (
           </button>
           <ul className="dropdown_menu">
             <li className="dropdown_menu__item">
-              <Link to={PRODUCT_GAMES_PAGE} className="dropdown_menu__link">
-                Games
-              </Link>
-            </li>
-            <li className="dropdown_menu__item">
-              <Link to={PRODUCT_CONSOLES_PAGE} className="dropdown_menu__link">
-                Consoles
+              <Link to={PRODUCT_PC_GAMES_PAGE} className="dropdown_menu__link">
+                PC
               </Link>
             </li>
             <li className="dropdown_menu__item">
               <Link
-                to={PRODUCT_ACCESSORIES_PAGE}
+                to={PRODUCT_PLAYSTATION_5_GAMES_PAGE}
                 className="dropdown_menu__link"
               >
-                Accessoriess
+                Playstation 5
+              </Link>
+            </li>
+            <li className="dropdown_menu__item">
+              <Link
+                to={PRODUCT_XBOX_ONE_GAMES_PAGE}
+                className="dropdown_menu__link"
+              >
+                XBox One
               </Link>
             </li>
           </ul>

@@ -54,7 +54,10 @@ module.exports = {
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-curly-newline": 0, // it conflicts with prettier
-    "react/jsx-wrap-multilines": ["error", { arrow: true, return: true, declaration: true }],
+    "react/jsx-wrap-multilines": [
+      "error",
+      { arrow: true, return: true, declaration: true },
+    ],
     "jsx-a11y/tabindex-no-positive": 0,
     "jsx-a11y/label-has-associated-control": 0,
     "spaced-comment": ["error", "always"],
@@ -103,4 +106,4 @@ module.exports = {
       },
     },
   },
-};
+}

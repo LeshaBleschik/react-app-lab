@@ -3,6 +3,17 @@ $main-font: "Zilla Slab", sans-serif;
 $heading-font: "Forum", sans-serif;
 
 //COLORS
+$light: #fff;
+$dark: #000;
 $main-bg: #333333;
 $header-footer: #7d2ae8;
 $hover-bgc: #9f7bce;
+$container-bgc: rgb(95, 49, 35);
+$card-item-bgc: rgb(116, 102, 85);
+$container-box-shadow: rgb(170, 164, 164);
+
+// TRANSITION
+$transition-fast: all 150ms ease-in-out;
+$transition-semi-fast: all 200ms ease-out;
+$transition-medium: all 300ms ease-in-out;
+$transition-slow: all 500ms ease-in-out;

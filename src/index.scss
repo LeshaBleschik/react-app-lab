@@ -10,12 +10,21 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: $main-bg;
   font-family: $main-font;
-  font-size: 1.6rem;
-  color: #fff;
-  text-align: center;
+  font-size: 2.5rem;
+  color: $light;
+  min-height: 100%;
+}
+
+.main_wrapper {
+  min-height: 100vh;
+  position: relative;
 }
 
 h1,
@@ -25,5 +34,5 @@ h4,
 h5,
 h6 {
   font-family: $heading-font;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
