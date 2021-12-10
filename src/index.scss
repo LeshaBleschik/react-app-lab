@@ -22,9 +22,16 @@ body {
   min-height: 100%;
 }
 
-.main_wrapper {
-  min-height: 100vh;
-  position: relative;
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -32,7 +39,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.heading {
   font-family: $heading-font;
   letter-spacing: 0.2rem;
+  font-weight: 900;
 }

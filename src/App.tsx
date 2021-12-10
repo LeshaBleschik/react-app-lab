@@ -5,11 +5,9 @@ import {
   SIGN_IN_PAGE,
   SIGN_UP_PAGE,
   ABOUT_PAGE,
-  PRODUCT_PC_GAMES_PAGE,
-  PRODUCT_PLAYSTATION_5_GAMES_PAGE,
-  PRODUCT_XBOX_ONE_GAMES_PAGE,
   WRONG_PATH,
   GET_TOP_PRODUCTS,
+  PRODUCTS_PAGE,
 } from "routes"
 import {
   BrowserRouter as Router,
@@ -18,14 +16,13 @@ import {
   Navigate,
 } from "react-router-dom"
 import { Game } from "types"
+import SearchBar from "components/search-bar/SearchBar"
+import ProductsPage from "pages/product-page/ProductsPage"
 import Header from "./components/header/Header"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
-import SignIn from "./pages/sign in/SignIn"
-import SignUp from "./pages/sign up/SignUp"
-import Pc from "./pages/products/pc/Pc"
-import Playstation from "./pages/products/playstation/Playstation"
-import Xbox from "./pages/products/xbox/Xbox"
+import SignIn from "./pages/sign-in/SignIn"
+import SignUp from "./pages/sign-up/SignUp"
 import Footer from "./components/footer/Footer"
 
 const App = () => {
@@ -34,32 +31,29 @@ const App = () => {
     axios
       .get<Game[]>(GET_TOP_PRODUCTS)
       .then((response) => {
-        console.log(response.data)
         setGames(response.data)
       })
-      .catch((error) => console.log(error))
+      .catch((error) => {
+        console.log(error)
+      })
   }, [])
 
   return (
-    <div className="main_wrapper">
-      <Router>
-        <Header />
+    <Router>
+      <Header />
+      <div className="content-wrapper">
+        <SearchBar />
         <Routes>
           <Route path={HOME_PAGE} element={<Home games={games} />} />
           <Route path={ABOUT_PAGE} element={<About />} />
-          <Route path={PRODUCT_PC_GAMES_PAGE} element={<Pc />} />
-          <Route
-            path={PRODUCT_PLAYSTATION_5_GAMES_PAGE}
-            element={<Playstation />}
-          />
-          <Route path={PRODUCT_XBOX_ONE_GAMES_PAGE} element={<Xbox />} />
+          <Route path={PRODUCTS_PAGE} element={<ProductsPage />} />
           <Route path={SIGN_IN_PAGE} element={<SignIn />} />
           <Route path={SIGN_UP_PAGE} element={<SignUp />} />
           <Route path={WRONG_PATH} element={<Navigate to={HOME_PAGE} />} />
         </Routes>
-      </Router>
+      </div>
       <Footer />
-    </div>
+    </Router>
   )
 }
 

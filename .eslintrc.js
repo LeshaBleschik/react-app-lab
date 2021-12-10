@@ -40,6 +40,7 @@ module.exports = {
       },
     ],
     // "@typescript-eslint/no-use-before-define": "0",
+
     "@typescript-eslint/explicit-module-boundary-types": "off", // TODO: should be turned on?
     "require-await": "error",
     "react/function-component-definition": "off",
@@ -53,6 +54,7 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "react/jsx-curly-newline": 0, // it conflicts with prettier
     "react/jsx-wrap-multilines": [
       "error",

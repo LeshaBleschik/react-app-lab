@@ -1,18 +1,17 @@
 import express from "express"
 import bodyParser from "body-parser"
 import apiRouter from "./apiRoutes.js"
-import cors from "cors"
 
 const app = express()
 const PORT = 5000
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*")
+  next()
+})
+
 app.use(bodyParser.json())
 app.use("/api", apiRouter)
-app.use(
-  cors({
-    origin: "*",
-  })
-)
 
 app.listen(PORT, (err) => {
   if (err) {

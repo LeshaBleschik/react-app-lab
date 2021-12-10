@@ -1,13 +1,8 @@
-import SearchBar from "components/reusable components/search-bar/SearchBar"
 import React from "react"
-import {
-  PRODUCT_PC_GAMES_PAGE,
-  PRODUCT_PLAYSTATION_5_GAMES_PAGE,
-  PRODUCT_XBOX_ONE_GAMES_PAGE,
-} from "routes"
 import { Link } from "react-router-dom"
 import "./home.scss"
-import GameCard from "components/reusable components/game card/GameCard"
+import GameCard from "components/game-card/GameCard"
+import { PRODUCTS_PAGE } from "../../routes"
 import { Game } from "../../types/index"
 
 type Props = {
@@ -16,51 +11,52 @@ type Props = {
 
 const Home = ({ games }: Props) => (
   <main className="home_page_container">
-    <SearchBar />
-    <section className="catagories_background_container items_container">
-      <div className="catagories_background_container__title">Categories</div>
-      <nav className="catagories_background_container__navigation">
+    <section className="catagories_container items_container">
+      <div className="catagories_container__title">Categories</div>
+      <nav className="catagories_container__navigation">
         <Link
-          to={PRODUCT_PC_GAMES_PAGE}
-          className="catagories_background_container__link"
+          to={`${PRODUCTS_PAGE}?category=pc`}
+          className="catagories_container__link"
         >
           <img
             src="../images/icons8-windows-10-50.png"
             alt="personal computer"
-            className="catagories_background_container__image"
+            className="catagories_container__image"
           />
           PC
         </Link>
         <Link
-          to={PRODUCT_PLAYSTATION_5_GAMES_PAGE}
-          className="catagories_background_container__link"
+          to={`${PRODUCTS_PAGE}?category=ps`}
+          className="catagories_container__link"
         >
           <img
             src="../images/icons8-playstation-50.png"
             alt="playstation 5"
-            className="catagories_background_container__image"
+            className="catagories_container__image"
           />
           Playstation 5
         </Link>
         <Link
-          to={PRODUCT_XBOX_ONE_GAMES_PAGE}
-          className="catagories_background_container__link"
+          to={`${PRODUCTS_PAGE}?category=xbox`}
+          className="catagories_container__link"
         >
           <img
             src="../images/icons8-xbox-50.png"
             alt="xbox one"
-            className="catagories_background_container__image"
+            className="catagories_container__image"
           />
           XBox One
         </Link>
       </nav>
     </section>
-    <section className="games_background_container items_container">
-      <div className="catagories_background_container__title">New games</div>
-      <div className="games_background_container__items">
-        {games.map((game) => (
-          <GameCard key={game.id} game={game} />
-        ))}
+    <section className="games_container items_container">
+      <div className="catagories_container__title">New games</div>
+      <div className="games_container__items">
+        {games.length ? (
+          games.map((game) => <GameCard key={game.id} game={game} />)
+        ) : (
+          <p>The server is down! Try again later.</p>
+        )}
       </div>
     </section>
   </main>

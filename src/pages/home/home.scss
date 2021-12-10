@@ -1,10 +1,5 @@
 @import "/src/styles/variables";
-@import "/src/components/reusable components/search-bar/search-bar";
-
-.search-bar {
-  width: 80%;
-  margin: 2.4rem 0;
-}
+@import "/src/components/search-bar/search-bar";
 
 .home_page_container {
   display: flex;
@@ -14,14 +9,14 @@
 }
 
 .items_container {
-  width: 95%;
-  padding: 2.4rem 3rem;
+  min-width: 95%;
+  padding: 2.5rem 3rem 5rem;
   background-color: $container-bgc;
   border-radius: 1.3rem;
   box-shadow: 0.4rem 0.4rem 0.1rem $container-box-shadow;
 }
 
-.catagories_background_container {
+.catagories_container {
   margin-bottom: 4rem;
   &__title {
     position: relative;
@@ -40,7 +35,7 @@
   }
   &__link {
     min-width: 28%;
-    height: 13rem;
+    min-height: 16rem;
     box-shadow: 0 0.7rem 0.4rem $dark;
     border: 0.3rem solid $dark;
     border-radius: 1rem;
@@ -63,11 +58,26 @@
   }
 }
 
-.games_background_container {
-  margin-bottom: 10rem;
+.games_container {
+  margin-bottom: 4rem;
   &__items {
     margin: 4.8rem 8rem 0 8rem;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .games_container__items {
+    margin: 4.8rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .games_container__items {
+    flex-direction: column;
+  }
+  .card_wrapper:not(:last-child) {
+    margin-bottom: 2.5rem;
   }
 }

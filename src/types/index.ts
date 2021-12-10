@@ -3,4 +3,6 @@ export type Game = {
   id: number
   price: string
   imgSrc: string
+  description: string
+  ageAllowed: string
 }
