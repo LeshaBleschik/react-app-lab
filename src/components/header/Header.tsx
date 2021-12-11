@@ -42,6 +42,7 @@ const Header = () => {
               to={PRODUCTS_PAGE}
               type="button"
               className="header__products_link"
+              onClick={clickHandler}
             >
               Products
               <img

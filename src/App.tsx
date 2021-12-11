@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
+import { GET_TOP_PRODUCTS } from "api-constants"
 import {
   HOME_PAGE,
   SIGN_IN_PAGE,
   SIGN_UP_PAGE,
   ABOUT_PAGE,
   WRONG_PATH,
-  GET_TOP_PRODUCTS,
   PRODUCTS_PAGE,
 } from "routes"
 import {

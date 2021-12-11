@@ -19,11 +19,12 @@
 .catagories_container {
   margin-bottom: 4rem;
   &__title {
+    font-size: 3rem;
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      top: 3.6rem;
+      top: 4rem;
       width: 100%;
       border-bottom: 0.2rem solid $light;
     }

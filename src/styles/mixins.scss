@@ -2,7 +2,7 @@
 
 @mixin hoverAndFocusEffect {
   background-color: $hover-bgc;
-  border-bottom: 5px solid $dark;
+  border-bottom: 0.5rem solid $dark;
   outline: none;
 }
 

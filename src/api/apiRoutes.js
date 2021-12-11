@@ -13,35 +13,24 @@ router.get("/get-top-products", (req, res) => {
 
 // GAME PRODUCTS LIST
 router.get(`/products`, (req, res) => {
-  const listOfGames = getGames()
-  let searchQuery = req.query.search?.toLowerCase()
+  let listOfGames = getGames()
+  const searchQuery = req.query.search?.toLowerCase() || ""
   const categoryQuery = req.query.category
   const filteredByCategory = listOfGames.filter((game) =>
     game.category.includes(categoryQuery)
   )
-  if (!searchQuery && !categoryQuery) {
-    return res.send(listOfGames)
-  }
-  if (searchQuery === undefined) {
-    searchQuery = ""
-  }
   if (searchQuery && !categoryQuery) {
-    return res.send(
-      listOfGames.filter((game) =>
-        game.title.toLowerCase().includes(searchQuery)
-      )
+    listOfGames = listOfGames.filter((game) =>
+      game.title.toLowerCase().includes(searchQuery)
     )
-  }
-  if (categoryQuery && searchQuery) {
-    return res.send(
-      filteredByCategory.filter((game) =>
-        game.title.toLowerCase().includes(searchQuery)
-      )
+  } else if (categoryQuery && searchQuery) {
+    listOfGames = filteredByCategory.filter((game) =>
+      game.title.toLowerCase().includes(searchQuery)
     )
+  } else if (categoryQuery) {
+    listOfGames = filteredByCategory
   }
-  if (categoryQuery) {
-    return res.send(filteredByCategory)
-  }
+  res.send(listOfGames)
 })
 
 export default router

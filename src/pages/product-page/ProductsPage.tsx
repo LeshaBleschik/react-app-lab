@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react"
-import { PRODUCTS_SEARCH } from "routes"
+import { PRODUCTS_SEARCH } from "api-constants"
 import axios from "axios"
 import { useLocation } from "react-router"
 import "./product-page.scss"
