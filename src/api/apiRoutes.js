@@ -16,9 +16,12 @@ router.get(`/products`, (req, res) => {
   let listOfGames = getGames()
   const searchQuery = req.query.search?.toLowerCase() || ""
   const categoryQuery = req.query.category
-  const filteredByCategory = listOfGames.filter((game) =>
-    game.category.includes(categoryQuery)
-  )
+  let filteredByCategory
+  if (categoryQuery) {
+    filteredByCategory = listOfGames.filter((game) =>
+      game.category.includes(categoryQuery)
+    )
+  }
   if (searchQuery && !categoryQuery) {
     listOfGames = listOfGames.filter((game) =>
       game.title.toLowerCase().includes(searchQuery)
