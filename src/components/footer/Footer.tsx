@@ -3,7 +3,7 @@ import "./footer.scss"
 
 const Footer = () => (
   <footer className="footer">
-    <h4 className="footer__title">Incredible conveniet</h4>
+    <div className="footer__title heading">Incredible conveniet</div>
     <nav className="footer__nav">
       <ul className="footer__list">
         <li className="footer__item">

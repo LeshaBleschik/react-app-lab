@@ -2,6 +2,19 @@
 
 @mixin hoverAndFocusEffect {
   background-color: $hover-bgc;
-  border-bottom: 5px solid #000;
+  border-bottom: 0.5rem solid $dark;
   outline: none;
+}
+
+@mixin cardRepitedProperties($bgc, $color) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: $bgc;
+  color: $color;
+  overflow: hidden;
+  box-shadow: 0 1rem 0.6rem $dark;
+  border: 0.4rem solid $dark;
+  border-radius: 1rem;
 }

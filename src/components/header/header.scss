@@ -6,29 +6,40 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 2.6rem;
+  height: 4.1rem;
   background-color: $header-footer;
-  padding: 0 20px;
+  padding: 0 2rem;
+  position: relative;
+  &__title {
+    color: $light;
+    text-decoration: none;
+    border-bottom: 0.5rem solid transparent;
+    height: 100%;
+    padding-top: 0.5rem;
+    &:hover {
+      @include hoverAndFocusEffect;
+    }
+  }
   &__nav {
     height: 100%;
   }
   &__list {
     display: flex;
-    gap: 20px;
     height: 100%;
   }
   &__item {
     list-style: none;
     height: 100%;
+    margin-left: 2rem;
   }
   &__link {
-    padding-top: 5px;
+    padding-top: 0.5rem;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border-bottom: 5px solid transparent;
+    color: $light;
+    border-bottom: 0.5rem solid transparent;
     height: 100%;
-    transition: all 200ms ease-in-out;
+    transition: $transition-semi-fast;
     &:hover,
     &:focus {
       @include hoverAndFocusEffect;
@@ -36,24 +47,25 @@
   }
   &__image {
     position: relative;
-    top: 13px;
-    width: 10px;
-    height: 10px;
+    top: 1.3rem;
+    width: 1rem;
+    height: 1rem;
   }
-  &__button {
+  &__products_link {
+    text-decoration: none;
     background-color: $header-footer;
     border: none;
     cursor: pointer;
-    color: #fff;
-    font-size: 1.6rem;
+    color: $light;
+    font-size: 2.5rem;
     font-family: $main-font;
     display: flex;
-    gap: 5px;
-    padding-top: 5px;
-    border-bottom: 5px solid transparent;
-    width: 130px;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-bottom: 0.5rem solid transparent;
+    width: 14.2rem;
     height: 100%;
-    transition: all 200ms ease-in-out;
+    transition: $transition-semi-fast;
     &:hover,
     &:focus {
       @include hoverAndFocusEffect;
@@ -67,7 +79,7 @@
     .dropdown_menu {
       display: block;
       flex-direction: column;
-      top: 41px;
+      top: 3.9rem;
     }
   }
 }
@@ -76,18 +88,125 @@
   display: none;
   position: absolute;
   background-color: $header-footer;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   list-style: none;
+  width: 100%;
+  z-index: 2;
   &__link {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border-bottom: 5px solid transparent;
+    color: $light;
+    border-bottom: 0.5rem solid transparent;
     width: 100%;
-    transition: all 200ms ease-in-out;
+    transition: $transition-semi-fast;
+    padding: 0.5rem 0;
+    text-align: center;
     &:hover,
     &:focus {
       @include hoverAndFocusEffect;
     }
+  }
+}
+
+.hamburger,
+.cross {
+  float: right;
+  font-size: 3.2rem;
+  cursor: pointer;
+  display: none;
+  margin-right: 3rem;
+  &:hover {
+    color: $dark;
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1000px) {
+  .header__item {
+    margin-left: 0.9rem;
+  }
+  .heading {
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-left: 0;
+    &__nav {
+      position: absolute;
+      width: 100%;
+      min-height: 100vh;
+      top: 3.9rem;
+      background-color: $hamburger-menu;
+      padding: 0;
+      z-index: 1;
+      left: -110%;
+      transition: $nav-transition;
+    }
+    &__nav.active {
+      left: 0;
+      transition: $nav-transition;
+    }
+    &__list {
+      margin-top: 6rem;
+      flex-direction: column;
+      height: auto;
+    }
+    &__item {
+      margin-left: 0;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      &:nth-child(3) {
+        margin-top: 2rem;
+      }
+    }
+    &__link {
+      height: auto;
+      padding: 0;
+      &:hover,
+      &:focus {
+        background-color: $hamburger-menu;
+      }
+    }
+    &__products_link {
+      width: auto;
+      background-color: $hamburger-menu;
+      transition: none;
+      &:hover,
+      &:focus {
+        background-color: $hamburger-menu;
+      }
+    }
+  }
+
+  .hamburger,
+  .cross {
+    display: block;
+  }
+
+  .dropdown_menu_section {
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .dropdown_menu {
+    background-color: $hamburger-menu;
+    &__item {
+      display: flex;
+      justify-content: center;
+    }
+    &__link {
+      width: auto;
+      &:hover,
+      &:focus {
+        background-color: $hamburger-menu;
+      }
+    }
+  }
+
+  .heading:hover {
+    background-color: $header-footer;
   }
 }

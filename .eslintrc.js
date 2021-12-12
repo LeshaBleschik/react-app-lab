@@ -40,6 +40,7 @@ module.exports = {
       },
     ],
     // "@typescript-eslint/no-use-before-define": "0",
+
     "@typescript-eslint/explicit-module-boundary-types": "off", // TODO: should be turned on?
     "require-await": "error",
     "react/function-component-definition": "off",
@@ -53,8 +54,12 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "react/react-in-jsx-scope": 0,
     "react/jsx-props-no-spreading": 0,
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "react/jsx-curly-newline": 0, // it conflicts with prettier
-    "react/jsx-wrap-multilines": ["error", { arrow: true, return: true, declaration: true }],
+    "react/jsx-wrap-multilines": [
+      "error",
+      { arrow: true, return: true, declaration: true },
+    ],
     "jsx-a11y/tabindex-no-positive": 0,
     "jsx-a11y/label-has-associated-control": 0,
     "spaced-comment": ["error", "always"],
@@ -103,4 +108,4 @@ module.exports = {
       },
     },
   },
-};
+}

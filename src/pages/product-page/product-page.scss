@@ -1,0 +1,31 @@
+@import "/src/styles/variables.scss";
+.wrapper {
+  margin-bottom: 5rem;
+  flex: 1;
+}
+
+.search_result {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 4rem 3rem 4rem;
+  background-color: $container-bgc;
+  border-radius: 1.3rem;
+  box-shadow: 0.4rem 0.4rem 0.1rem $container-box-shadow;
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    list-style: none;
+    gap: 3rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: 6rem;
+  }
+  &__error {
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+}

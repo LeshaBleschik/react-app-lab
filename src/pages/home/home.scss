@@ -1,0 +1,84 @@
+@import "/src/styles/variables";
+@import "/src/components/search-bar/search-bar";
+
+.home_page_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items_container {
+  min-width: 95%;
+  padding: 2.5rem 3rem 5rem;
+  background-color: $container-bgc;
+  border-radius: 1.3rem;
+  box-shadow: 0.4rem 0.4rem 0.1rem $container-box-shadow;
+}
+
+.catagories_container {
+  margin-bottom: 4rem;
+  &__title {
+    font-size: 3rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4rem;
+      width: 100%;
+      border-bottom: 0.2rem solid $light;
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+  }
+  &__link {
+    min-width: 28%;
+    min-height: 16rem;
+    box-shadow: 0 0.7rem 0.4rem $dark;
+    border: 0.3rem solid $dark;
+    border-radius: 1rem;
+    background-color: $card-item-bgc;
+    text-decoration: none;
+    font-weight: bold;
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: nowrap;
+    overflow: hidden;
+    &:hover,
+    &:focus {
+      border: 0.3rem solid $light;
+      box-shadow: 0 0.7rem 0.4rem $light;
+      outline: none;
+    }
+  }
+}
+
+.games_container {
+  margin-bottom: 4rem;
+  &__items {
+    margin: 4.8rem 8rem 0 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .games_container__items {
+    margin: 4.8rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .games_container__items {
+    flex-direction: column;
+  }
+  .card_wrapper:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}

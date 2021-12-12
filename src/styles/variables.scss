@@ -1,8 +1,25 @@
 // FONTS
 $main-font: "Zilla Slab", sans-serif;
-$heading-font: "Forum", sans-serif;
+$heading-font: "Forum", cursive, sans-serif;
 
 //COLORS
-$main-bg: #333333;
+$light: #fff;
+$dark: #000;
+$main-bg: rgb(21, 26, 41);
 $header-footer: #7d2ae8;
 $hover-bgc: #9f7bce;
+$container-bgc: rgb(95, 49, 35);
+$card-item-bgc: rgb(158, 111, 53);
+$container-box-shadow: rgb(170, 164, 164);
+$search-results-bgc: rgb(225, 228, 255);
+$button-color: rgb(201, 51, 51);
+$button-color-hover: rgb(161, 19, 19);
+$hamburger-menu: #6830b1;
+$search-bar-focus: rgb(218, 221, 61);
+
+// TRANSITION
+$transition-fast: all 150ms ease-in-out;
+$transition-semi-fast: all 200ms ease-out;
+$transition-medium: all 300ms ease-in-out;
+$transition-slow: all 500ms linear;
+$nav-transition: left 0.5s ease;
