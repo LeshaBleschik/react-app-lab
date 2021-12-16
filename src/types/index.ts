@@ -6,3 +6,8 @@ export type Game = {
   description: string
   ageAllowed: string
 }
+
+export type User = {
+  userName: string
+  password: string
+} | null

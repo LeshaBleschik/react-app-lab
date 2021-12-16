@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import "./styles/variables";
+
 *,
 *::before,
 *::after {
@@ -42,6 +43,9 @@ h5,
 h6,
 .heading {
   font-family: $heading-font;
-  letter-spacing: 0.2rem;
-  font-weight: 900;
+  letter-spacing: 0.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 35px;
+  font-size: 3rem;
 }

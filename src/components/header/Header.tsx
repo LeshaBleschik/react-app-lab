@@ -1,24 +1,41 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import {
-  HOME_PAGE,
-  SIGN_IN_PAGE,
-  SIGN_UP_PAGE,
-  ABOUT_PAGE,
-  PRODUCTS_PAGE,
-} from "routes"
+import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE } from "routes"
+import { useNavigate } from "react-router"
 import "./header.scss"
+import { User } from "types"
 
-const Header = () => {
+type HeaderProps = {
+  signInState: () => void
+  signUpState: () => void
+  isLoggedIn: boolean
+  user: User
+  logOutSetter: () => void
+}
+
+const Header = ({
+  signInState,
+  signUpState,
+  isLoggedIn,
+  user,
+  logOutSetter,
+}: HeaderProps) => {
   const [isActive, setIsActive] = useState(false)
+  const navigate = useNavigate()
+
   const clickHandler = () => {
     setIsActive(!isActive)
   }
 
-  function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.keyCode === 13) {
       clickHandler()
     }
+  }
+
+  const logOut = () => {
+    navigate("/", { replace: true })
+    logOutSetter()
   }
 
   return (
@@ -45,10 +62,9 @@ const Header = () => {
               onClick={clickHandler}
             >
               Products
-              <img
-                className="header__image"
-                src="/images/arrow-199-16.png"
-                alt="down arrow"
+              <i
+                className="fas fa-sort-down header__icon"
+                aria-label="sort down arrow"
               />
             </Link>
             <ul className="dropdown_menu">
@@ -91,22 +107,43 @@ const Header = () => {
             </Link>
           </li>
           <li className="header__item">
-            <Link
-              to={SIGN_IN_PAGE}
-              className="header__link"
-              onClick={clickHandler}
-            >
-              Sign In
-            </Link>
+            {isLoggedIn ? (
+              <button type="button" className="header__btn header__logged_in">
+                <i className="fas fa-user" />
+                {user?.userName}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="header__btn"
+                onClick={signInState}
+              >
+                Sign In
+              </button>
+            )}
           </li>
+          {isLoggedIn && (
+            <li className="header__item">
+              <button className="header__btn header__logged_in" type="button">
+                <i className="fas fa-shopping-cart" />
+                <span>0</span>
+              </button>
+            </li>
+          )}
           <li className="header__item">
-            <Link
-              to={SIGN_UP_PAGE}
-              className="header__link"
-              onClick={clickHandler}
-            >
-              Sign Up
-            </Link>
+            {isLoggedIn ? (
+              <button type="button" onClick={logOut} className="header__btn">
+                <i className="fas fa-door-open" />
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="header__btn"
+                onClick={signUpState}
+              >
+                Sign Up
+              </button>
+            )}
           </li>
         </ul>
       </nav>

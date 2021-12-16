@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { PRODUCTS_SEARCH } from "api-constants"
+import { PRODUCTS_SEARCH } from "api/constants"
 import axios from "axios"
 import { useLocation } from "react-router"
 import "./product-page.scss"
@@ -9,7 +9,6 @@ import { capitalize } from "capitalize"
 
 const ProductsPage = () => {
   const [searchGames, setSearchGames] = useState<Game[]>([])
-
   const location = useLocation()
   const search = new URLSearchParams(location.search)
   const category = capitalize(search.get("category") || "")
@@ -31,7 +30,7 @@ const ProductsPage = () => {
         {!category ? (
           <h2 className="search_result__title">All categories</h2>
         ) : (
-          <h2 className="search_result__title"> {category}</h2>
+          <h2 className="search_result__title"> {category} </h2>
         )}
         <div className="search_result__list">
           {searchGames.length ? (

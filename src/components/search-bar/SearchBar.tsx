@@ -8,8 +8,11 @@ import debounce from "lodash.debounce"
 const SearchBar = () => {
   const location = useLocation()
   const navigate = useNavigate()
+  const navigationUrl = new URLSearchParams(location.search)
+  const urlCategory = navigationUrl.get("category")
   const [inputValue, setInputValue] = useState<string>("")
   const [isLoading, setIsLoading] = useState<boolean>(false)
+
   const updateUrl = useCallback(
     debounce((search) => {
       navigate(`${PRODUCTS_PAGE}?${search}`, { replace: true })
@@ -32,8 +35,7 @@ const SearchBar = () => {
   }
 
   useEffect(() => {
-    const seacrh = new URLSearchParams(location.search)
-    const urlSearch = seacrh.get("search")
+    const urlSearch = navigationUrl.get("search")
     if (urlSearch !== null) {
       setInputValue(urlSearch)
     }
@@ -41,9 +43,8 @@ const SearchBar = () => {
 
   const handleClick = () => {
     updateUrl.cancel()
-    const search = new URLSearchParams(location.search)
-    search.delete("search")
-    updateUrl(search.toString())
+    navigationUrl.delete("search")
+    updateUrl(navigationUrl.toString())
     setInputValue("")
     setIsLoading(true)
   }
@@ -53,6 +54,10 @@ const SearchBar = () => {
       setInputValue("")
     }
   }, [location.pathname])
+
+  useEffect(() => {
+    setInputValue("")
+  }, [urlCategory])
 
   if (location.pathname !== HOME_PAGE && location.pathname !== PRODUCTS_PAGE) {
     return null

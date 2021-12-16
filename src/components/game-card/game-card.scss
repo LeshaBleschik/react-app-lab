@@ -54,22 +54,12 @@
     text-align: center;
   }
   &__buy_btn {
-    width: 15rem;
-    height: 5rem;
-    background-color: $button-color;
-    color: $light;
-    border-radius: 0.5rem;
-    border: 0.3rem solid $light;
-    font-size: 1.8rem;
-    cursor: pointer;
     display: block;
     margin: 0 auto;
-    &:hover {
-      background-color: $button-color-hover;
-    }
   }
 }
 
+// MEDIA QUERIES
 @media screen and (max-width: 1440px) {
   .card_wrapper {
     &__game_info {
@@ -92,6 +82,7 @@
     &__buy_btn {
       width: 10rem;
       height: 4rem;
+      font-size: 1.5rem;
     }
     &__age {
       font-size: 3rem;
