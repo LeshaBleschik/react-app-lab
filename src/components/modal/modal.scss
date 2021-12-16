@@ -1,0 +1,37 @@
+@import "/src/styles/variables";
+
+.background_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  background-color: $modal-transparent-bgc;
+  &__modal_wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 4rem;
+    transform: translate(-50%, -50%);
+    background-color: $main-bg;
+    border-radius: 3rem;
+    z-index: 50;
+    width: 40%;
+  }
+  &__close_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    float: right;
+  }
+  &__close_icon {
+    font-size: 4rem;
+    color: $light;
+    &:hover {
+      color: $modal-close-btn-hover;
+    }
+  }
+}

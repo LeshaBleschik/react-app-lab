@@ -40,7 +40,6 @@ module.exports = {
       },
     ],
     // "@typescript-eslint/no-use-before-define": "0",
-
     "@typescript-eslint/explicit-module-boundary-types": "off", // TODO: should be turned on?
     "require-await": "error",
     "react/function-component-definition": "off",
@@ -48,6 +47,7 @@ module.exports = {
     "prettier/prettier": ["error"],
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react/destructuring-assignment": 0,
+    "react/button-has-type": "off",
     // "react/jsx-max-props-per-line": [1, { maximum: 1 }], //it doesn't work with prettier, you can remove prettier from rules: 'prettier/prettier'...
     // "react/jsx-first-prop-new-line": [1, "multiline"], //it doesn't work with prettier, you can remove prettier from rules: 'prettier/prettier'...
     "react/prop-types": 0,

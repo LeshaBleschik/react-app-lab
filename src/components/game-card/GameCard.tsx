@@ -1,3 +1,4 @@
+import Button from "elements/button/Button"
 import React from "react"
 import { Game } from "types"
 import "./game-card.scss"
@@ -50,9 +51,7 @@ const GameCard = ({
       <div className="card_wrapper__back_side">
         <p className="card_wrapper__game_info">{description}</p>
         <div className="card_wrapper__age">{ageAllowed}</div>
-        <button className="card_wrapper__buy_btn" type="button">
-          Add to cart
-        </button>
+        <Button className="card_wrapper__buy_btn" title="Add to cart" />
       </div>
     </div>
   </div>

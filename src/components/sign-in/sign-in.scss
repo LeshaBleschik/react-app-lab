@@ -1,0 +1,76 @@
+@import "/src/styles/variables";
+
+.sign_in_form {
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  &__input {
+    display: block;
+    background-color: $main-bg;
+    outline: none;
+    border: 0.1rem solid $light;
+    width: 100%;
+    color: $light;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: inherit;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    &:focus {
+      border: 0.1rem solid $search-bar-focus;
+    }
+  }
+  &__submit {
+    display: block;
+    margin: 5rem auto 0 auto;
+    min-width: 20rem;
+  }
+  &__label {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+  &__error {
+    font-size: 1.7rem;
+    color: $button-color;
+    text-align: left;
+    font-weight: bold;
+  }
+  &__transparrent {
+    height: 2rem;
+  }
+  &__input_field {
+    background-color: $main-bg;
+    border: 0.1rem solid $light;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    &:focus-within {
+      border: 0.1rem solid $search-bar-focus;
+    }
+  }
+  &__input_inside {
+    background-color: $main-bg;
+    border-radius: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: $light;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: inherit;
+  }
+  .far {
+    font-size: 2rem;
+    cursor: pointer;
+    color: $light;
+  }
+  .reset {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}

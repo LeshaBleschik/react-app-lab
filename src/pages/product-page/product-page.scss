@@ -1,4 +1,5 @@
 @import "/src/styles/variables.scss";
+
 .wrapper {
   margin-bottom: 5rem;
   flex: 1;
@@ -21,11 +22,38 @@
     gap: 3rem;
   }
   &__title {
+    padding-top: 3rem;
     text-align: center;
     font-size: 6rem;
   }
   &__error {
     margin: 0 auto;
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search_result__list {
+    .card_wrapper {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .search_result__list {
+    .card_wrapper {
+      &__game_info {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search_result__list {
+    .card_wrapper {
+      width: 100%;
+    }
   }
 }

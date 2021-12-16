@@ -1,0 +1,15 @@
+@import "/src/styles/variables";
+
+.button_default {
+  width: 15rem;
+  height: 5rem;
+  background-color: $button-color;
+  color: $light;
+  border-radius: 0.5rem;
+  border: 0.3rem solid $light;
+  font-size: 1.8rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
