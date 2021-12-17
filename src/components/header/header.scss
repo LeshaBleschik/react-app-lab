@@ -11,7 +11,7 @@
   padding: 0 2rem;
   position: relative;
   &__title {
-    color: $light;
+    color: $dark;
     text-decoration: none;
     border-bottom: 0.5rem solid transparent;
     height: 100%;
@@ -37,7 +37,7 @@
     padding-top: 0.5rem;
     display: inline-block;
     text-decoration: none;
-    color: $light;
+    color: $dark;
     border-bottom: 0.5rem solid transparent;
     height: 100%;
     transition: $transition-semi-fast;
@@ -56,14 +56,14 @@
     background-color: $header-footer;
     border: none;
     cursor: pointer;
-    color: $light;
+    color: $dark;
     font-size: 2.5rem;
     font-family: $main-font;
     display: flex;
     gap: 0.5rem;
     padding-top: 0.5rem;
     border-bottom: 0.5rem solid transparent;
-    width: 14.2rem;
+    width: 16rem;
     height: 100%;
     transition: $transition-semi-fast;
     &:hover,
@@ -75,7 +75,7 @@
     background-color: $header-footer;
     border: none;
     cursor: pointer;
-    color: $light;
+    color: $dark;
     font-size: 2.5rem;
     font-family: $main-font;
     border-bottom: 0.5rem solid transparent;
@@ -120,12 +120,12 @@
   &__link {
     display: inline-block;
     text-decoration: none;
-    color: $light;
+    color: $dark;
     border-bottom: 0.5rem solid transparent;
     width: 100%;
     transition: $transition-semi-fast;
-    padding: 0.5rem 0;
-    text-align: center;
+    padding: 0.7rem;
+    text-align: left;
     &:hover,
     &:focus {
       @include hoverAndFocusEffect;
@@ -140,8 +140,9 @@
   cursor: pointer;
   display: none;
   margin-right: 3rem;
+  color: $dark;
   &:hover {
-    color: $dark;
+    color: $light;
   }
 }
 
@@ -156,7 +157,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .header {
     padding-left: 0;
     &__nav {
@@ -164,7 +165,7 @@
       width: 100%;
       min-height: 100vh;
       top: 4.5rem;
-      background-color: $hamburger-menu;
+      background-color: $header-footer;
       padding: 0;
       z-index: 1;
       left: -110%;
@@ -191,22 +192,19 @@
     &__link {
       height: auto;
       padding: 0;
-      &:hover,
-      &:focus {
-        background-color: $hamburger-menu;
-      }
     }
     &__products_link,
     &__btn {
-      width: auto;
-      background-color: $hamburger-menu;
+      background-color: $header-footer;
       transition: none;
-      &:hover,
-      &:focus {
-        background-color: $hamburger-menu;
-      }
+      width: auto;
+    }
+    &__products_link {
+      display: flex;
+      justify-content: center;
     }
   }
+
   .dropdown_menu_section:hover .dropdown_menu {
     position: absolute;
     top: 3.9rem;
@@ -219,25 +217,21 @@
 
   .dropdown_menu_section {
     position: relative;
-    width: 10rem;
+    display: block;
     margin: 0 auto;
+    width: 16rem;
   }
+
   .dropdown_menu {
-    background-color: $hamburger-menu;
+    background-color: $header-footer;
     &__item {
       display: flex;
       justify-content: center;
     }
     &__link {
+      padding: 0;
+      margin-bottom: 1rem;
       width: auto;
-      &:hover,
-      &:focus {
-        background-color: $hamburger-menu;
-      }
     }
-  }
-
-  .heading:hover {
-    background-color: $header-footer;
   }
 }

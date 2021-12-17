@@ -4,36 +4,36 @@ import "./modal.scss"
 
 type ModalProps = {
   children: JSX.Element
-  singInIsVisible?: boolean
-  singUpIsVisible?: boolean
+  signInIsOpen?: boolean
+  signUpIsOpen?: boolean
   signInOnClose?: () => void
   signUpOnClose?: () => void
 }
 
 const Modal = ({
   children,
-  singInIsVisible,
+  signInIsOpen,
   signInOnClose,
-  singUpIsVisible,
+  signUpIsOpen,
   signUpOnClose,
 }: ModalProps) => {
   const portal = document.getElementById("portal") as HTMLElement
   const modalRef = useRef() as React.MutableRefObject<HTMLInputElement>
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (!modalRef.current?.contains(event.target as Node) && singInIsVisible) {
+    if (!modalRef.current?.contains(event.target as Node) && signInIsOpen) {
       signInOnClose?.()
     }
-    if (!modalRef.current?.contains(event.target as Node) && singUpIsVisible) {
+    if (!modalRef.current?.contains(event.target as Node) && signUpIsOpen) {
       signUpOnClose?.()
     }
   }
 
   const closeOnKeyPress = (event: KeyboardEvent) => {
-    if (event.key === "Escape" && singInIsVisible) {
+    if (event.key === "Escape" && signInIsOpen) {
       signInOnClose?.()
     }
-    if (event.key === "Escape" && singUpIsVisible) {
+    if (event.key === "Escape" && signUpIsOpen) {
       signUpOnClose?.()
     }
   }
@@ -47,7 +47,7 @@ const Modal = ({
     }
   })
 
-  if (!singInIsVisible && !singUpIsVisible) return null
+  if (!signInIsOpen && !signUpIsOpen) return null
 
   return ReactDOM.createPortal(
     <div className="background_overlay">
@@ -56,7 +56,7 @@ const Modal = ({
           type="button"
           className="background_overlay__close_button"
           onClick={() => {
-            if (singInIsVisible) {
+            if (signInIsOpen) {
               signInOnClose?.()
             } else {
               signUpOnClose?.()

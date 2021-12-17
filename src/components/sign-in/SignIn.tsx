@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react"
 import "./sign-in.scss"
 import Input from "elements/input/Input"
-import { User } from "types"
 import Button from "elements/button/Button"
 import signIn from "../../api/signIn"
-
-type SignInProps = {
-  logInSetter: () => void
-  setUser: React.Dispatch<React.SetStateAction<User>>
-  signInOnClose: () => void
-}
+import useAuth from "../../useContext"
 
 type SignInData = {
   userName: string
@@ -19,7 +13,8 @@ type SignInData = {
 
 type SignInErrors = SignInData | null
 
-const SignIn = ({ logInSetter, setUser, signInOnClose }: SignInProps) => {
+const SignIn = () => {
+  const { logInSetter, setUser, signInOnClose } = useAuth()
   const [userData, setUserData] = useState<SignInData>({
     userName: "",
     password: "",
@@ -61,16 +56,21 @@ const SignIn = ({ logInSetter, setUser, signInOnClose }: SignInProps) => {
     setIsError(!!errors?.userName || !!errors?.password)
   }, [errors])
 
+  useEffect(() => {
+    setIsError(true)
+  }, [])
+
   const submit = async (event: React.FormEvent) => {
     event.preventDefault()
     if (isError) {
+      setErrors(validation(userData))
       const resetUserData = { userName: "", password: "" }
       setUserData(resetUserData)
     } else {
       const response = await signIn(userData)
       if (response) {
         logInSetter()
-        setUser({ ...userData })
+        setUser({ userName: userData.userName })
         signInOnClose()
       } else {
         const signInError = {

@@ -41,9 +41,9 @@ router.post("/auth/sign-in", (req, res) => {
 
 // REGISTRATION
 router.put("/auth/registration", (req, res) => {
-  const { userName, password } = req.body
-  const userData = { [userName]: password }
-  if (currentUserData[userName]) {
+  const { regUserName, regPassword } = req.body
+  const userData = { [regUserName]: regPassword }
+  if (currentUserData[regUserName]) {
     res.sendStatus(400)
   } else {
     writeFile("users.json", { ...currentUserData, ...userData })

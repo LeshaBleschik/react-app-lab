@@ -14,7 +14,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom"
-import { Game, User } from "types"
+import { Game } from "types"
 import Profile from "pages/profile-page/Profile"
 import SignIn from "components/sign-in/SignIn"
 import Registration from "components/registration/Registration"
@@ -25,37 +25,11 @@ import Header from "./components/header/Header"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
 import Footer from "./components/footer/Footer"
+import useAuth, { AuthProvider } from "./useContext"
 
-const App = () => {
+function InnerApp() {
   const [games, setGames] = useState<Game[]>([])
-  const [signInIsOpen, setSignInIsOpen] = useState<boolean>(false)
-  const [signUpIsOpen, setSignUpIsOpen] = useState(false)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [user, setUser] = useState<User>(null)
-
-  const signInOpenClick = () => {
-    setSignInIsOpen(true)
-  }
-
-  const signInOnClose = () => {
-    setSignInIsOpen(false)
-  }
-
-  const signUpOpenClick = () => {
-    setSignUpIsOpen(true)
-  }
-
-  const signUpOnClose = () => {
-    setSignUpIsOpen(false)
-  }
-
-  const logInSetter = () => {
-    setIsLoggedIn(true)
-  }
-
-  const logOutSetter = () => {
-    setIsLoggedIn(false)
-  }
+  const { signInIsOpen, signUpIsOpen, signInOnClose, signUpOnClose } = useAuth()
 
   useEffect((): void => {
     axios
@@ -70,28 +44,14 @@ const App = () => {
 
   return (
     <Router>
-      <Header
-        signInState={signInOpenClick}
-        signUpState={signUpOpenClick}
-        isLoggedIn={isLoggedIn}
-        user={user}
-        logOutSetter={logOutSetter}
-      />
+      <Header />
       <div className="content-wrapper">
         <SearchBar />
-        <Modal singInIsVisible={signInIsOpen} signInOnClose={signInOnClose}>
-          <SignIn
-            logInSetter={logInSetter}
-            setUser={setUser}
-            signInOnClose={signInOnClose}
-          />
+        <Modal signInIsOpen={signInIsOpen} signInOnClose={signInOnClose}>
+          <SignIn />
         </Modal>
-        <Modal singUpIsVisible={signUpIsOpen} signUpOnClose={signUpOnClose}>
-          <Registration
-            signUpOnClose={signUpOnClose}
-            logInSetter={logInSetter}
-            setUser={setUser}
-          />
+        <Modal signUpIsOpen={signUpIsOpen} signUpOnClose={signUpOnClose}>
+          <Registration />
         </Modal>
         <Routes>
           <Route path={HOME_PAGE} element={<Home games={games} />} />
@@ -105,5 +65,11 @@ const App = () => {
     </Router>
   )
 }
+
+const App = () => (
+  <AuthProvider>
+    <InnerApp />
+  </AuthProvider>
+)
 
 export default App

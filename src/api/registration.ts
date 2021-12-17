@@ -2,9 +2,9 @@ import axios from "axios"
 import { REGISTRATION } from "./constants"
 
 type SignUpData = {
-  userName: string
-  password: string
-  repeatPassword: string
+  regUserName: string
+  regPassword: string
+  regRepeatPassword: string
   isRegistrated?: string
 }
 

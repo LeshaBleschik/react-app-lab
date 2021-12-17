@@ -1,7 +1,6 @@
 @import "./variables";
 
 @mixin hoverAndFocusEffect {
-  background-color: $hover-bgc;
   border-bottom: 0.5rem solid $dark;
   outline: none;
 }
@@ -14,7 +13,6 @@
   background-color: $bgc;
   color: $color;
   overflow: hidden;
-  box-shadow: 0 1rem 0.6rem $dark;
   border: 0.4rem solid $dark;
   border-radius: 1rem;
 }

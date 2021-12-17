@@ -16,7 +16,7 @@
     transition: transform 350ms ease-out;
   }
   &__front_side {
-    @include cardRepitedProperties($card-item-bgc, $light);
+    @include cardRepitedProperties($dark, $light);
   }
   &__image {
     height: 70%;
@@ -40,7 +40,7 @@
     height: 2.5rem;
   }
   &__back_side {
-    @include cardRepitedProperties($card-item-bgc, $light);
+    @include cardRepitedProperties($dark, $light);
     padding: 1.2rem;
     position: relative;
     transform: perspective(60rem) rotateY(180deg);

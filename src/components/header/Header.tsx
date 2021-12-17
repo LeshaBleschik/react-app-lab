@@ -3,23 +3,12 @@ import { Link } from "react-router-dom"
 import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE } from "routes"
 import { useNavigate } from "react-router"
 import "./header.scss"
-import { User } from "types"
+import useAuth from "../../useContext"
 
-type HeaderProps = {
-  signInState: () => void
-  signUpState: () => void
-  isLoggedIn: boolean
-  user: User
-  logOutSetter: () => void
-}
+const Header = () => {
+  const { signInOpenClick, signUpOpenClick, isLoggedIn, user, logOutSetter } =
+    useAuth()
 
-const Header = ({
-  signInState,
-  signUpState,
-  isLoggedIn,
-  user,
-  logOutSetter,
-}: HeaderProps) => {
   const [isActive, setIsActive] = useState(false)
   const navigate = useNavigate()
 
@@ -116,7 +105,7 @@ const Header = ({
               <button
                 type="button"
                 className="header__btn"
-                onClick={signInState}
+                onClick={signInOpenClick}
               >
                 Sign In
               </button>
@@ -139,7 +128,7 @@ const Header = ({
               <button
                 type="button"
                 className="header__btn"
-                onClick={signUpState}
+                onClick={signUpOpenClick}
               >
                 Sign Up
               </button>
