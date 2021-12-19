@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { PRODUCTS_SEARCH } from "api/constants"
 import axios from "axios"
 import { useLocation } from "react-router"
 import "./product-page.scss"
 import GameCard from "components/game-card/GameCard"
 import { Game } from "types"
 import { capitalize } from "capitalize"
+import { PRODUCTS_SEARCH } from "api/constants"
 
 const ProductsPage = () => {
   const [searchGames, setSearchGames] = useState<Game[]>([])

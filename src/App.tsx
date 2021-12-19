@@ -25,11 +25,28 @@ import Header from "./components/header/Header"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
 import Footer from "./components/footer/Footer"
-import useAuth, { AuthProvider } from "./useContext"
+import { AuthProvider } from "./useContext"
 
 function InnerApp() {
   const [games, setGames] = useState<Game[]>([])
-  const { signInIsOpen, signUpIsOpen, signInOnClose, signUpOnClose } = useAuth()
+  const [signInIsOpen, setSignInIsOpen] = useState<boolean>(false)
+  const [signUpIsOpen, setSignUpIsOpen] = useState(false)
+
+  const signInOpenClick = () => {
+    setSignInIsOpen(true)
+  }
+
+  const signInOnClose = () => {
+    setSignInIsOpen(false)
+  }
+
+  const signUpOpenClick = () => {
+    setSignUpIsOpen(true)
+  }
+
+  const signUpOnClose = () => {
+    setSignUpIsOpen(false)
+  }
 
   useEffect((): void => {
     axios
@@ -44,14 +61,17 @@ function InnerApp() {
 
   return (
     <Router>
-      <Header />
+      <Header
+        signInOpenClick={signInOpenClick}
+        signUpOpenClick={signUpOpenClick}
+      />
       <div className="content-wrapper">
         <SearchBar />
         <Modal signInIsOpen={signInIsOpen} signInOnClose={signInOnClose}>
-          <SignIn />
+          <SignIn signInOnClose={signInOnClose} />
         </Modal>
         <Modal signUpIsOpen={signUpIsOpen} signUpOnClose={signUpOnClose}>
-          <Registration />
+          <Registration signUpOnClose={signUpOnClose} />
         </Modal>
         <Routes>
           <Route path={HOME_PAGE} element={<Home games={games} />} />

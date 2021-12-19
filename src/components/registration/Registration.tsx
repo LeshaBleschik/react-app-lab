@@ -3,7 +3,6 @@ import "./registration.scss"
 import { useNavigate } from "react-router"
 import Button from "elements/button/Button"
 import Input from "elements/input/Input"
-import registration from "api/registration"
 import useAuth from "../../useContext"
 
 type SignUpData = {
@@ -15,8 +14,11 @@ type SignUpData = {
 
 type SignUpErrors = SignUpData | null
 
-const Registration = () => {
-  const { signUpOnClose, logInSetter, setUser } = useAuth()
+type RegistrationProps = {
+  signUpOnClose: () => void
+}
+const Registration = ({ signUpOnClose }: RegistrationProps) => {
+  const { setUser, registration } = useAuth()
   const navigate = useNavigate()
   const [userData, setUserData] = useState<SignUpData>({
     regUserName: "",
@@ -95,7 +97,6 @@ const Registration = () => {
     } else {
       const response = await registration(userData)
       if (response) {
-        logInSetter()
         setUser({ userName: userData.regUserName })
         navigate("/profile", { replace: true })
         signUpOnClose()

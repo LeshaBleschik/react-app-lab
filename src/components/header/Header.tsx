@@ -5,9 +5,12 @@ import { useNavigate } from "react-router"
 import "./header.scss"
 import useAuth from "../../useContext"
 
-const Header = () => {
-  const { signInOpenClick, signUpOpenClick, isLoggedIn, user, logOutSetter } =
-    useAuth()
+type HeaderProps = {
+  signInOpenClick: () => void
+  signUpOpenClick: () => void
+}
+const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
+  const { isLoggedIn, user, logOutSetter } = useAuth()
 
   const [isActive, setIsActive] = useState(false)
   const navigate = useNavigate()

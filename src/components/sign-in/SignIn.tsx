@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import "./sign-in.scss"
 import Input from "elements/input/Input"
 import Button from "elements/button/Button"
-import signIn from "../../api/signIn"
 import useAuth from "../../useContext"
 
 type SignInData = {
@@ -13,8 +12,12 @@ type SignInData = {
 
 type SignInErrors = SignInData | null
 
-const SignIn = () => {
-  const { logInSetter, setUser, signInOnClose } = useAuth()
+type SignInProps = {
+  signInOnClose: () => void
+}
+
+const SignIn = ({ signInOnClose }: SignInProps) => {
+  const { setUser, signIn } = useAuth()
   const [userData, setUserData] = useState<SignInData>({
     userName: "",
     password: "",
@@ -69,7 +72,6 @@ const SignIn = () => {
     } else {
       const response = await signIn(userData)
       if (response) {
-        logInSetter()
         setUser({ userName: userData.userName })
         signInOnClose()
       } else {
