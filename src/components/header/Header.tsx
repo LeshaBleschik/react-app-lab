@@ -3,15 +3,17 @@ import { Link } from "react-router-dom"
 import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE } from "routes"
 import { useNavigate } from "react-router"
 import "./header.scss"
-import useAuth from "../../useContext"
+import { useDispatch, useSelector, RootStateOrAny } from "react-redux"
+import { removeUser } from "redux/actions"
 
 type HeaderProps = {
   signInOpenClick: () => void
   signUpOpenClick: () => void
 }
-const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
-  const { isLoggedIn, user, logOutSetter } = useAuth()
 
+const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
+  const dispatch = useDispatch()
+  const user = useSelector((state: RootStateOrAny) => state.user)
   const [isActive, setIsActive] = useState(false)
   const navigate = useNavigate()
 
@@ -27,7 +29,7 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
 
   const logOut = () => {
     navigate("/", { replace: true })
-    logOutSetter()
+    dispatch(removeUser())
   }
 
   return (
@@ -99,7 +101,7 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
             </Link>
           </li>
           <li className="header__item">
-            {isLoggedIn ? (
+            {user ? (
               <button type="button" className="header__btn header__logged_in">
                 <i className="fas fa-user" />
                 {user?.userName}
@@ -114,7 +116,7 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
               </button>
             )}
           </li>
-          {isLoggedIn && (
+          {user && (
             <li className="header__item">
               <button className="header__btn header__logged_in" type="button">
                 <i className="fas fa-shopping-cart" />
@@ -123,7 +125,7 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
             </li>
           )}
           <li className="header__item">
-            {isLoggedIn ? (
+            {user ? (
               <button type="button" onClick={logOut} className="header__btn">
                 <i className="fas fa-door-open" />
               </button>

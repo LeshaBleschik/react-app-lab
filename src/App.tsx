@@ -25,9 +25,8 @@ import Header from "./components/header/Header"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
 import Footer from "./components/footer/Footer"
-import { AuthProvider } from "./useContext"
 
-function InnerApp() {
+const App = () => {
   const [games, setGames] = useState<Game[]>([])
   const [signInIsOpen, setSignInIsOpen] = useState<boolean>(false)
   const [signUpIsOpen, setSignUpIsOpen] = useState(false)
@@ -85,11 +84,5 @@ function InnerApp() {
     </Router>
   )
 }
-
-const App = () => (
-  <AuthProvider>
-    <InnerApp />
-  </AuthProvider>
-)
 
 export default App

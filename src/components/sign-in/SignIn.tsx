@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react"
 import "./sign-in.scss"
 import Input from "elements/input/Input"
 import Button from "elements/button/Button"
-import useAuth from "../../useContext"
+import { useDispatch } from "react-redux"
+import { signIn } from "redux/reducers/userReducer"
+import { setUser } from "redux/actions"
 
 type SignInData = {
   userName: string
@@ -17,7 +19,7 @@ type SignInProps = {
 }
 
 const SignIn = ({ signInOnClose }: SignInProps) => {
-  const { setUser, signIn } = useAuth()
+  const dispatch = useDispatch()
   const [userData, setUserData] = useState<SignInData>({
     userName: "",
     password: "",
@@ -70,9 +72,9 @@ const SignIn = ({ signInOnClose }: SignInProps) => {
       const resetUserData = { userName: "", password: "" }
       setUserData(resetUserData)
     } else {
-      const response = await signIn(userData)
+      const response = await signIn()(userData)
       if (response) {
-        setUser({ userName: userData.userName })
+        dispatch(setUser(userData.userName))
         signInOnClose()
       } else {
         const signInError = {

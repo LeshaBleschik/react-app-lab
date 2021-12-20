@@ -3,7 +3,9 @@ import "./registration.scss"
 import { useNavigate } from "react-router"
 import Button from "elements/button/Button"
 import Input from "elements/input/Input"
-import useAuth from "../../useContext"
+import { useDispatch } from "react-redux"
+import { registration } from "redux/reducers/userReducer"
+import { setUser } from "redux/actions"
 
 type SignUpData = {
   regUserName: string
@@ -18,7 +20,7 @@ type RegistrationProps = {
   signUpOnClose: () => void
 }
 const Registration = ({ signUpOnClose }: RegistrationProps) => {
-  const { setUser, registration } = useAuth()
+  const dispatch = useDispatch()
   const navigate = useNavigate()
   const [userData, setUserData] = useState<SignUpData>({
     regUserName: "",
@@ -95,9 +97,9 @@ const Registration = ({ signUpOnClose }: RegistrationProps) => {
       }
       setUserData(resetUserData)
     } else {
-      const response = await registration(userData)
+      const response = await registration()(userData)
       if (response) {
-        setUser({ userName: userData.regUserName })
+        dispatch(setUser(userData.regUserName))
         navigate("/profile", { replace: true })
         signUpOnClose()
       } else {
