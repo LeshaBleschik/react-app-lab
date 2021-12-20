@@ -8,7 +8,7 @@
   border: 0.2rem solid $light;
   font-family: $main-font;
   border-radius: 0.8rem;
-  background-color: $container-bgc;
+  background-color: $main-bg;
   color: $light;
   outline: none;
   display: flex;
@@ -24,7 +24,7 @@
   &__input {
     height: 100%;
     width: 100%;
-    background-color: $container-bgc;
+    background-color: $main-bg;
     color: $light;
     padding: 0 0.5rem;
     font-size: 2rem;

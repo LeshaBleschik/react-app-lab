@@ -3,30 +3,27 @@ import "./registration.scss"
 import { useNavigate } from "react-router"
 import Button from "elements/button/Button"
 import Input from "elements/input/Input"
-import registration from "api/registration"
-import { User } from "types"
+import useAuth from "../../useContext"
 
 type SignUpData = {
-  userName: string
-  password: string
-  repeatPassword: string
+  regUserName: string
+  regPassword: string
+  regRepeatPassword: string
   isRegistrated?: string
 }
 
 type SignUpErrors = SignUpData | null
 
-type SignUpProps = {
+type RegistrationProps = {
   signUpOnClose: () => void
-  logInSetter: () => void
-  setUser: React.Dispatch<React.SetStateAction<User>>
 }
-
-const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
+const Registration = ({ signUpOnClose }: RegistrationProps) => {
+  const { setUser, registration } = useAuth()
   const navigate = useNavigate()
   const [userData, setUserData] = useState<SignUpData>({
-    userName: "",
-    password: "",
-    repeatPassword: "",
+    regUserName: "",
+    regPassword: "",
+    regRepeatPassword: "",
   })
   const [isError, setIsError] = useState(false)
   const [errors, setErrors] = useState<SignUpErrors>(null)
@@ -42,19 +39,23 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
 
   const validation = (inputValues: SignUpData) => {
     const passwordRegEx = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}/g
-    const errorsObj = { userName: "", password: "", repeatPassword: "" }
-    if (!inputValues.userName.length) {
-      errorsObj.userName = "The field can't be empty!"
-    } else if (inputValues.userName.length < 4) {
-      errorsObj.userName = "At least 4 characters are required!"
+    const errorsObj = {
+      regUserName: "",
+      regPassword: "",
+      regRepeatPassword: "",
     }
-    if (!inputValues.password) {
-      errorsObj.password = "The field can't be empty!"
-    } else if (!passwordRegEx.test(inputValues.password)) {
-      errorsObj.password =
+    if (!inputValues.regUserName.length) {
+      errorsObj.regUserName = "The field can't be empty!"
+    } else if (inputValues.regUserName.length < 4) {
+      errorsObj.regUserName = "At least 4 characters are required!"
+    }
+    if (!inputValues.regPassword) {
+      errorsObj.regPassword = "The field can't be empty!"
+    } else if (!passwordRegEx.test(inputValues.regPassword)) {
+      errorsObj.regPassword =
         "Passwords must contain at least 6 symbols, one capitalized letter and one number"
-    } else if (inputValues.password !== inputValues.repeatPassword) {
-      errorsObj.password =
+    } else if (inputValues.regPassword !== inputValues.regRepeatPassword) {
+      errorsObj.regPassword =
         "The passwords aren't the same! Make sure they have same values."
     }
     return errorsObj
@@ -62,7 +63,10 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const copiedData: SignUpData = { ...userData }
-    const id = event.target.id as "userName" | "password" | "repeatPassword"
+    const id = event.target.id as
+      | "regUserName"
+      | "regPassword"
+      | "regRepeatPassword"
     copiedData[id] = event.target.value
     setUserData(copiedData)
     setErrors(validation(copiedData))
@@ -70,31 +74,37 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
 
   useEffect(() => {
     setIsError(
-      !!errors?.userName || !!errors?.password || !!errors?.repeatPassword
+      !!errors?.regUserName ||
+        !!errors?.regPassword ||
+        !!errors?.regRepeatPassword
     )
   }, [errors])
+
+  useEffect(() => {
+    setIsError(true)
+  }, [])
 
   const submit = async (event: React.FormEvent) => {
     event.preventDefault()
     if (isError) {
+      setErrors(validation(userData))
       const resetUserData: SignUpData = {
-        userName: "",
-        password: "",
-        repeatPassword: "",
+        regUserName: "",
+        regPassword: "",
+        regRepeatPassword: "",
       }
       setUserData(resetUserData)
     } else {
       const response = await registration(userData)
       if (response) {
-        logInSetter()
-        setUser({ ...userData })
+        setUser({ userName: userData.regUserName })
         navigate("/profile", { replace: true })
         signUpOnClose()
       } else {
         const registrationError = {
-          userName: "",
-          password: "",
-          repeatPassword: "",
+          regUserName: "",
+          regPassword: "",
+          regRepeatPassword: "",
           isRegistrated: "Current user already exists! Try to sign in.",
         }
         setErrors(registrationError)
@@ -110,36 +120,36 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
       ) : (
         <div className="registration_form__transparrent" />
       )}
-      <label htmlFor="userName">Login:</label>
+      <label htmlFor="regUserName">Login:</label>
       <Input
         type="text"
-        name="userName"
-        id="userName"
+        name="regUserName"
+        id="regUserName"
         className="registration_form__input"
         placeholder="Name:"
         onChange={handleChange}
-        value={userData.userName}
+        value={userData.regUserName}
         autocomplete="off"
       />
-      {errors?.userName ? (
-        <p className="registration_form__error">{errors.userName}</p>
+      {errors?.regUserName ? (
+        <p className="registration_form__error">{errors.regUserName}</p>
       ) : (
         <div className="registration_form__transparrent" />
       )}
-      <label htmlFor="password" className="registration_form__label">
+      <label htmlFor="regPassword" className="registration_form__label">
         Password:
       </label>
       <div className="registration_form__input_field">
         <Input
           type={showPassword ? "text" : "password"}
-          name="password"
-          id="password"
+          name="regPassword"
+          id="regPassword"
           className="registration_form__input_inside"
           placeholder="Password:"
           onChange={handleChange}
-          value={userData.password}
+          value={userData.regPassword}
         />
-        {userData.password && (
+        {userData.regPassword && (
           <button
             type="button"
             onClick={() => toggleClickHandler(setShowPassword, showPassword)}
@@ -150,7 +160,7 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
         )}
       </div>
       <label
-        htmlFor="repeatPassword"
+        htmlFor="regRepeatPassword"
         className="registration_form__label_repeat"
       >
         Repeat password:
@@ -158,14 +168,14 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
       <div className="registration_form__input_field">
         <Input
           type={showRepeatPassword ? "text" : "password"}
-          name="repeatPassword"
-          id="repeatPassword"
+          name="regRepeatPassword"
+          id="regRepeatPassword"
           className="registration_form__input_inside"
           placeholder="Repeat password:"
           onChange={handleChange}
-          value={userData.repeatPassword}
+          value={userData.regRepeatPassword}
         />
-        {userData.repeatPassword && (
+        {userData.regRepeatPassword && (
           <button
             type="button"
             onClick={() =>
@@ -179,8 +189,8 @@ const Registration = ({ signUpOnClose, logInSetter, setUser }: SignUpProps) => {
           </button>
         )}
       </div>
-      {errors?.password ? (
-        <p className="registration_form__error">{errors.password}</p>
+      {errors?.regPassword ? (
+        <p className="registration_form__error">{errors.regPassword}</p>
       ) : (
         <div className="registration_form__transparrent" />
       )}

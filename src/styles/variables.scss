@@ -3,21 +3,16 @@ $main-font: "Zilla Slab", sans-serif;
 $heading-font: "Forum", sans-serif;
 
 //COLORS
-$light: #fff;
-$dark: #000;
-$main-bg: rgb(21, 26, 41);
-$header-footer: #7d2ae8;
-$hover-bgc: #9f7bce;
-$container-bgc: rgb(95, 49, 35);
-$card-item-bgc: rgb(158, 111, 53);
-$container-box-shadow: rgb(170, 164, 164);
-$search-results-bgc: rgb(225, 228, 255);
+$light: rgb(255, 255, 255);
+$dark: rgb(0, 0, 0);
+$main-bg: rgb(34, 39, 44);
+$header-footer: rgb(249, 218, 112);
+$hover-categories-bgc: rgb(249, 218, 112);
 $button-color: rgb(201, 51, 51);
+$categories-bgc: #e5e2db;
 $button-color-hover: rgb(161, 19, 19);
-$hamburger-menu: #6830b1;
 $search-bar-focus: rgb(218, 221, 61);
-$modal-transparent-bgc: rgba(0, 0, 0, 0.795);
-$modal-close-btn-hover: rgb(80, 71, 71);
+$modal-transparent-bgc: rgba(0, 0, 0, 0.521);
 
 // TRANSITION
 $transition-fast: all 150ms ease-in-out;
