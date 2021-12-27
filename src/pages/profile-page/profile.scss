@@ -1,0 +1,156 @@
+@import "/src/styles/variables";
+
+.profile {
+  height: 100%;
+  &__title {
+    font-size: 5rem;
+    position: relative;
+    margin: 5rem 0 0 5rem;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      width: 97%;
+      border-bottom: 0.2rem solid $light;
+    }
+  }
+  &__container {
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img_section {
+    width: clamp(20%, 27%, 40%);
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 2rem;
+    height: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__label {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  &__user_info {
+    width: clamp(20%, 27%, 40%);
+  }
+  &__input {
+    background-color: $main-bg;
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.5rem;
+    outline: none;
+    font-family: inherit;
+    border: 0.1rem solid $light;
+    font-weight: 500;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    color: $light;
+    &:focus {
+      border: 0.1rem solid $search-bar-focus;
+    }
+  }
+  &__text_area {
+    background-color: $main-bg;
+    color: $light;
+    border: 0.2rem inset $light;
+    outline: none;
+    resize: none;
+    padding: 0.7rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 1rem;
+    width: 100%;
+    &:focus {
+      border: 0.2rem inset $search-bar-focus;
+    }
+  }
+  &__buttons_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__buttons--group {
+    margin-top: 3rem;
+  }
+  &__error {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: $button-color;
+    text-align: left;
+    font-weight: bold;
+  }
+  &__transparrent {
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  &__description {
+    width: clamp(20%, 27%, 40%);
+    height: 100%;
+    border: 0.1rem solid $light;
+    border-radius: 1rem;
+    padding: 3rem;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+  }
+  &__choose_file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: clamp(5rem, 13rem, 19rem);
+    height: clamp(4rem, 5rem, 7rem);
+    background-color: $button-color;
+    color: $light;
+    border-radius: 0.5rem;
+    border: 0.3rem solid $light;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    &:hover {
+      background-color: $button-color-hover;
+    }
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .profile {
+    &__container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__img_section,
+    &__user_info,
+    &__description {
+      width: 100%;
+    }
+    &__buttons_group {
+      justify-content: space-around;
+    }
+    &__label {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+}

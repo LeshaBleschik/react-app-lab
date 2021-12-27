@@ -1,9 +1,11 @@
 import express from "express"
 import bodyParser from "body-parser"
 import apiRouter from "./apiRoutes.js"
+import path from "path"
 
 const app = express()
 const PORT = 5000
+const __dirname = path.resolve()
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*")
@@ -24,6 +26,8 @@ app.options("/*", (_, res) => {
 
 app.use(bodyParser.json())
 app.use("/api", apiRouter)
+app.use(express.json({ extended: true }))
+app.use("/images", express.static(path.join(__dirname, "images")))
 
 app.listen(PORT, (err) => {
   if (err) {

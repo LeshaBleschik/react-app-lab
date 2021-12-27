@@ -3,8 +3,10 @@ import { Link } from "react-router-dom"
 import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE } from "routes"
 import { useNavigate } from "react-router"
 import "./header.scss"
-import { useDispatch, useSelector, RootStateOrAny } from "react-redux"
+import { useDispatch, RootStateOrAny, useSelector } from "react-redux"
 import { removeUser } from "redux/actions"
+import { DELETE_TOKEN } from "api/constants"
+import axios from "axios"
 
 type HeaderProps = {
   signInOpenClick: () => void
@@ -12,8 +14,8 @@ type HeaderProps = {
 }
 
 const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
-  const dispatch = useDispatch()
   const user = useSelector((state: RootStateOrAny) => state.user)
+  const dispatch = useDispatch()
   const [isActive, setIsActive] = useState(false)
   const navigate = useNavigate()
 
@@ -28,8 +30,21 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
   }
 
   const logOut = () => {
-    navigate("/", { replace: true })
+    axios
+      .patch(DELETE_TOKEN, { userName: user?.userName })
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+    localStorage.clear()
     dispatch(removeUser())
+    navigate("/", { replace: true })
+  }
+
+  const profileClickHandler = () => {
+    navigate("/profile", { replace: true })
   }
 
   return (
@@ -102,7 +117,14 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
           </li>
           <li className="header__item">
             {user ? (
-              <button type="button" className="header__btn header__logged_in">
+              <button
+                type="button"
+                className="header__btn header__logged_in"
+                onClick={() => {
+                  profileClickHandler()
+                  clickHandler()
+                }}
+              >
                 <i className="fas fa-user" />
                 {user?.userName}
               </button>
@@ -110,7 +132,10 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
               <button
                 type="button"
                 className="header__btn"
-                onClick={signInOpenClick}
+                onClick={() => {
+                  signInOpenClick()
+                  clickHandler()
+                }}
               >
                 Sign In
               </button>
@@ -118,7 +143,11 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
           </li>
           {user && (
             <li className="header__item">
-              <button className="header__btn header__logged_in" type="button">
+              <button
+                className="header__btn header__logged_in"
+                type="button"
+                onClick={clickHandler}
+              >
                 <i className="fas fa-shopping-cart" />
                 <span>0</span>
               </button>
@@ -126,14 +155,24 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
           )}
           <li className="header__item">
             {user ? (
-              <button type="button" onClick={logOut} className="header__btn">
+              <button
+                type="button"
+                onClick={() => {
+                  logOut()
+                  clickHandler()
+                }}
+                className="header__btn"
+              >
                 <i className="fas fa-door-open" />
               </button>
             ) : (
               <button
                 type="button"
                 className="header__btn"
-                onClick={signUpOpenClick}
+                onClick={() => {
+                  signUpOpenClick()
+                  clickHandler()
+                }}
               >
                 Sign Up
               </button>

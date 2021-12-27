@@ -24,7 +24,6 @@
   &__submit {
     display: block;
     margin: 6rem auto 0 auto;
-    min-width: 20rem;
   }
   &__label {
     display: inline-block;
@@ -76,5 +75,13 @@
     background: none;
     border: none;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .registration_form {
+    &__title {
+      font-size: 2.5rem;
+    }
   }
 }

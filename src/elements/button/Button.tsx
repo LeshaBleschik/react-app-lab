@@ -5,16 +5,27 @@ type ButtonProps = {
   className: string
   title: string
   type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"]
+  onClick?: () => void
 }
 
-const Button = ({ className, title, type = "button" }: ButtonProps) => (
-  <button className={`button_default ${className}`} type={type}>
+const Button = ({
+  className,
+  title,
+  type = "button",
+  onClick,
+}: ButtonProps) => (
+  <button
+    className={`button_default ${className}`}
+    type={type}
+    onClick={onClick}
+  >
     {title}
   </button>
 )
 
 Button.defaultProps = {
   type: "button",
+  onClick: () => false,
 }
 
 export default Button

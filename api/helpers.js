@@ -1,5 +1,17 @@
 import fs from "fs"
+import multer from "multer"
 import { GAMES_FILE_NAME, USERS_FILE_NAME } from "./constants.js"
+
+const fileStorage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "images/")
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}--${file.originalname}`)
+  },
+})
+
+export const upload = multer({ storage: fileStorage })
 
 export const readFile = (filename) =>
   JSON.parse(fs.readFileSync(filename, "utf-8"))
