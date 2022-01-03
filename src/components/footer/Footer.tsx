@@ -26,7 +26,7 @@ const Footer = () => (
             className="footer__link"
           >
             <img
-              src="../images/icons8-playstation-50.png"
+              src="../images/ps.png"
               alt="sony playstation logo"
               className="footer__icon"
             />
@@ -52,7 +52,7 @@ const Footer = () => (
             className="footer__link"
           >
             <img
-              src="../images/icons8-xbox-50.png"
+              src="../images/xbox.png"
               alt="x-box logo"
               className="footer__icon"
             />

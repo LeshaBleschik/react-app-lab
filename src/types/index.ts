@@ -5,6 +5,8 @@ export type Game = {
   imgSrc: string
   description: string
   ageAllowed: string
+  category: string[]
+  rating: string[]
 }
 
 export type User = {

@@ -16,6 +16,7 @@
     transition: transform 350ms ease-out;
   }
   &__front_side {
+    position: relative;
     @include cardRepitedProperties($dark, $light);
   }
   &__image {
@@ -56,6 +57,22 @@
   &__buy_btn {
     display: block;
     margin: 0 auto;
+  }
+  &__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $light-tr;
+    display: flex;
+    gap: 0.3rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+
+    &_img {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 

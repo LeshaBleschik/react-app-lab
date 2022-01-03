@@ -38,7 +38,7 @@
     border: solid $dark;
     border-width: 0.3rem 0.3rem 0.7rem 0.3rem;
     border-radius: 1rem;
-    background-color: $categories-bgc;
+    background-color: $header-footer;
     text-decoration: none;
     font-weight: bold;
     color: $dark;
@@ -50,7 +50,7 @@
     overflow: hidden;
     &:hover,
     &:focus {
-      border-bottom: 0.7rem solid $hover-categories-bgc;
+      border-bottom: 0.7rem solid $light;
       outline: none;
     }
   }

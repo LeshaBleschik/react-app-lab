@@ -110,8 +110,8 @@ const Profile = ({ passwordClickToggle }: PasswordProps) => {
   }
 
   const setFile = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (!event.currentTarget.files) return
     const file = event.currentTarget.files[0]
-    if (!file) return
     setImage(file)
   }
 
@@ -199,13 +199,16 @@ const Profile = ({ passwordClickToggle }: PasswordProps) => {
             </div>
           </form>
         </div>
-        <div className="profile__description">
+        <div className="profile__description_section">
+          <div className="profile__info_title">Personal information</div>
           {user?.fields ? (
-            <div>
-              <pre>{user?.fields}</pre>
+            <div className="profile__description">
+              <pre className="profile__personal_info">{user?.fields}</pre>
             </div>
           ) : (
-            <div>There is no additional info yet.</div>
+            <div className="profile__description">
+              There is no additional info yet.
+            </div>
           )}
         </div>
       </div>
