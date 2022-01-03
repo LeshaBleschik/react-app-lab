@@ -1,16 +1,16 @@
 @import "/src/styles/variables.scss";
 
-.wrapper {
+.products {
   margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
   flex: 1;
-}
-
-.search_result {
-  width: 95%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 4rem 3rem 4rem;
-  border-radius: 1.3rem;
+  &__container {
+    width: 75%;
+    height: 100%;
+    padding: 0 4rem 3rem 4rem;
+    border-radius: 1.3rem;
+  }
   &__list {
     display: flex;
     justify-content: space-evenly;
@@ -18,29 +18,102 @@
     margin-top: 5rem;
     list-style: none;
     gap: 3rem;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3.5rem;
-      left: 0;
-      width: 100%;
-      border-bottom: 0.2rem solid $light;
-    }
   }
   &__title {
     padding-top: 3rem;
     text-align: center;
     font-size: 6rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8.5rem;
+      left: 0;
+      width: 100%;
+      border-bottom: 0.2rem solid $light;
+    }
   }
   &__error {
     margin: 0 auto;
     font-size: 3rem;
   }
+  .products--title {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  &__filter {
+    width: 25%;
+    padding: 0 2rem;
+    font-size: 2.2rem;
+  }
+  &__filter_title {
+    display: block;
+    margin-top: 3rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      width: 100%;
+      border-bottom: 0.2rem solid $light;
+    }
+  }
+  &__sort {
+    margin-top: 3rem;
+  }
+  &__sort--group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  &__select {
+    width: 45%;
+    font-family: inherit;
+    font-size: 2rem;
+    color: $light;
+    padding: 0.5rem;
+    background: url("https://img.icons8.com/material-outlined/24/ffffff/expand-arrow--v1.png")
+      no-repeat right $main-bg;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__filter_title:first-of-type {
+    margin-top: 3rem;
+  }
+  input[type="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  &__search_icon {
+    position: absolute;
+    top: 33rem;
+    font-size: 8rem;
+  }
+  .fa-sync-alt {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media screen and (max-width: 740px) {
-  .search_result__list {
+  .products__list {
     .card_wrapper {
       width: 45%;
     }
@@ -48,7 +121,7 @@
 }
 
 @media screen and (max-width: 610px) {
-  .search_result__list {
+  .products__list {
     .card_wrapper {
       &__game_info {
         font-size: 1.4rem;
@@ -58,7 +131,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .search_result__list {
+  .products__list {
     .card_wrapper {
       width: 100%;
     }

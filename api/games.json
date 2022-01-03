@@ -4,1039 +4,1871 @@
     "title": "Rocket League",
     "category": ["ps", "pc"],
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$23.34",
+    "price": "23.34",
     "description": "Rocket League is a video game that involves the combination of car racing and soccer, created and developed by Psyonix Studios. In the game, two teams of players are pitted against each other in a futuristic arena to duke it out in five-minute matches.",
-    "ageAllowed": "10+",
-    "releaseDate": 1350000000000
+    "ageAllowed": 10,
+    "releaseDate": 1350000000000,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 2,
     "category": ["xbox", "ps", "pc"],
     "title": "Grand Theft Auto V",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$29.99",
+    "price": "29.99",
     "description": "Grand Theft Auto V is an action adventure game played from either a third-person or first person perspective. Players complete missions linear scenarios with set objectives to progress through the story. Outside of the missions, players may freely roam the open world.",
-    "ageAllowed": "17+",
-    "releaseDate": 1350000000001
+    "ageAllowed": 17,
+    "releaseDate": 1350000000001,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 3,
-    "category": [],
+    "category": ["ps", "pc"],
     "title": "Apex Legends",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$19.99",
-    "description": "Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One in February 2019, and for Nintendo Switch in March 2021. The game supports cross-platform play.",
-    "ageAllowed": "14+",
-    "releaseDate": 1350000000002
+    "price": "19.99",
+    "description": "Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One in February 2019, and for Nintendo Switch in March 2021.",
+    "ageAllowed": 14,
+    "releaseDate": 1350000000002,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 4,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "Pokémon Go",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$50.77",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "48.24",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1365130033433
+    "ageAllowed": 16,
+    "releaseDate": 1379996260375,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 5,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Borderlands 2",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$32.69",
+    "price": "31.61",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1368765986791
+    "ageAllowed": 6,
+    "releaseDate": 1355984249880,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 6,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Divinity: Original Sin 2",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$49.68",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "26.59",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1372078351371
+    "ageAllowed": 17,
+    "releaseDate": 1356100436707,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 7,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Dishonored",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$39.80",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "19.46",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1395763954876
+    "ageAllowed": 8,
+    "releaseDate": 1357333197767,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 8,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Final Fantasy VII",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$45.90",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "24.61",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1385665582500
+    "ageAllowed": 6,
+    "releaseDate": 1381390561000,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 9,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Assassin's Creed IV: Black Flag",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$16.21",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "25.39",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1353740484154
+    "ageAllowed": 8,
+    "releaseDate": 1353058733824,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 10,
-    "category": ["xbox"],
+    "category": ["ps"],
     "title": "Monkey Island 2: LeChuck's Revenge",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$35.95",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "32.22",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1363357170775
+    "ageAllowed": 12,
+    "releaseDate": 1373193006849,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 11,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Burnout 3: Takedown",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$39.39",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "23.39",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1372756199574
+    "ageAllowed": 11,
+    "releaseDate": 1389601027595,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 12,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Fallout 2",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$24.99",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "32.61",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1373580191566
+    "ageAllowed": 13,
+    "releaseDate": 1367882134023,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 13,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Undertale",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$45.65",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "30.98",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1377247279699
+    "ageAllowed": 10,
+    "releaseDate": 1352379445278,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 14,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "League of Legends",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$15.31",
+    "price": "43.33",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1355182300140
+    "ageAllowed": 10,
+    "releaseDate": 1381571958948,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 15,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Mega Man 3",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$30.13",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "47.64",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1353862288039
+    "ageAllowed": 17,
+    "releaseDate": 1393892506617,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 16,
-    "category": ["xbox"],
+    "category": ["ps"],
     "title": "Soulcalibur",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$18.22",
+    "price": "44.39",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1354501783628
+    "ageAllowed": 18,
+    "releaseDate": 1350344948080,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 17,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Thief II",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$47.49",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "15.81",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1377074963963
+    "ageAllowed": 15,
+    "releaseDate": 1375417214496,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 18,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Metal Age",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$35.37",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "39.83",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1380503364510
+    "ageAllowed": 15,
+    "releaseDate": 1378932219544,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 19,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "SimCity 2000",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$43.52",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "47.28",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1373095194754
+    "ageAllowed": 18,
+    "releaseDate": 1382983114991,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 20,
-    "category": ["ps"],
+    "category": ["xbox"],
     "title": "Inside",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$37.70",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "44.94",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1379595950859
+    "ageAllowed": 12,
+    "releaseDate": 1362436672099,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 21,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Tony Hawk's Pro Skater 2",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$47.93",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "37.47",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1365876991677
+    "ageAllowed": 6,
+    "releaseDate": 1354822090120,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 22,
-    "category": [],
+    "category": ["xbox"],
     "title": "Monster Hunter: World",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$50.34",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "39.10",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1356534775036
+    "ageAllowed": 11,
+    "releaseDate": 1353221556346,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 23,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "Resident Evil 2",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$29.20",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "15.26",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1351469437158
+    "ageAllowed": 8,
+    "releaseDate": 1374154272567,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 24,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "System Shock 2",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$42.90",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "34.74",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1396155328359
+    "ageAllowed": 6,
+    "releaseDate": 1365422999781,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 25,
     "category": ["xbox"],
     "title": "Grand Theft Auto: Vice City",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$27.94",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "19.67",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1369269934755
+    "ageAllowed": 9,
+    "releaseDate": 1358331797688,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 26,
     "category": ["ps"],
     "title": "Persona 5",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$35.29",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "25.46",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1366878061443
+    "ageAllowed": 8,
+    "releaseDate": 1393280533441,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 27,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "Fortnite",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$49.22",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "15.77",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1374470134900
+    "ageAllowed": 14,
+    "releaseDate": 1373344195319,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 28,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Fable 2",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$44.70",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "18.70",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1385469454229
+    "ageAllowed": 11,
+    "releaseDate": 1394600351019,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 29,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "GoldenEye 007",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$16.20",
+    "price": "28.14",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1380565248615
+    "ageAllowed": 6,
+    "releaseDate": 1352287781762,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 30,
-    "category": ["pc"],
+    "category": ["xbox"],
     "title": "Super Smash Bros. Ultimate",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$18.19",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "19.56",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1382559103681
+    "ageAllowed": 12,
+    "releaseDate": 1357263083121,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 31,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "The Elder Scrolls V: Skyrim",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$42.52",
+    "price": "19.40",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1375717431418
+    "ageAllowed": 11,
+    "releaseDate": 1372328223454,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 32,
     "category": ["xbox"],
     "title": "X-COM: UFO Defense",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$41.99",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "27.80",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1356319494865
+    "ageAllowed": 12,
+    "releaseDate": 1359196557871,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 33,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Suikoden II",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$40.76",
+    "price": "46.36",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1361612013072
+    "ageAllowed": 10,
+    "releaseDate": 1354701239038,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 34,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Battlefield 1942",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$24.77",
+    "price": "23.77",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1360717317825
+    "ageAllowed": 10,
+    "releaseDate": 1351489368759,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 35,
     "category": ["ps"],
     "title": "Dota 2",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$20.21",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "40.70",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1368650665567
+    "ageAllowed": 10,
+    "releaseDate": 1369327375784,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 36,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "Mario Kart 8 Deluxe",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$37.37",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "20.27",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1364367898640
+    "ageAllowed": 9,
+    "releaseDate": 1382255397257,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 37,
-    "category": [],
+    "category": ["ps"],
     "title": "Star Wars Jedi Knight II: Jedi Outcast",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$15.58",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "39.75",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1351566663003
+    "ageAllowed": 10,
+    "releaseDate": 1374558422837,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 38,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Spelunky",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$42.39",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "49.31",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1384341795440
+    "ageAllowed": 16,
+    "releaseDate": 1394321960749,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 39,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Donkey Kong",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$50.49",
+    "price": "35.14",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1393004867218
+    "ageAllowed": 13,
+    "releaseDate": 1384074325595,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 40,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "The Sims",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$34.57",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "45.64",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1383006885485
+    "ageAllowed": 14,
+    "releaseDate": 1389014380835,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 41,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Rock Band",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$37.82",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "33.97",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1382693523674
+    "ageAllowed": 11,
+    "releaseDate": 1364737712532,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 42,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Red Dead Redemption 2",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$43.49",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "47.92",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1375040511614
+    "ageAllowed": 11,
+    "releaseDate": 1392793931475,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 43,
-    "category": ["pc"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Splinter Cell: Chaos Theory",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$19.65",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "41.44",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1379424568976
+    "ageAllowed": 11,
+    "releaseDate": 1378875342731,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 44,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Super Mario World 2: Yoshi's Island",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$47.35",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "41.43",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1391316477372
+    "ageAllowed": 7,
+    "releaseDate": 1364189810820,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 45,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Silent Hill 2",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$37.63",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "20.62",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1350101873501
+    "ageAllowed": 16,
+    "releaseDate": 1368851275585,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 46,
-    "category": [],
+    "category": ["ps"],
     "title": "Grand Theft Auto: San Andreas",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$36.61",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "50.74",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1374864630234
+    "ageAllowed": 17,
+    "releaseDate": 1386769407314,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 47,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Mass Effect",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$22.61",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "40.19",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1376804091234
+    "ageAllowed": 12,
+    "releaseDate": 1351816758969,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 48,
-    "category": ["pc"],
+    "category": ["xbox"],
     "title": "Call of Duty 4: Modern Warfare",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$38.59",
+    "price": "15.27",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1372461696570
+    "ageAllowed": 9,
+    "releaseDate": 1362562347899,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 49,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Rise of the Tomb Raider",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$46.39",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "33.28",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1368125751901
+    "ageAllowed": 8,
+    "releaseDate": 1369038572811,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 50,
-    "category": ["pc"],
+    "category": ["ps"],
     "title": "Batman: Arkham City",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$43.22",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "21.12",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1397032082751
+    "ageAllowed": 16,
+    "releaseDate": 1382536908615,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 51,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "The Witness",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$15.46",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "18.58",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1367309520529
+    "ageAllowed": 16,
+    "releaseDate": 1378966187092,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 52,
-    "category": ["xbox"],
+    "category": ["ps"],
     "title": "Journey",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$23.14",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "31.92",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1373939747180
+    "ageAllowed": 18,
+    "releaseDate": 1377754614483,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 53,
-    "category": ["pc"],
+    "category": ["ps"],
     "title": "Uncharted 2: Among Thieves",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$34.83",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "34.15",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1382004312334
+    "ageAllowed": 7,
+    "releaseDate": 1357189543210,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 54,
-    "category": [],
+    "category": ["xbox"],
     "title": "Overwatch",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$36.24",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "30.85",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1395867405262
+    "ageAllowed": 6,
+    "releaseDate": 1354466293925,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 55,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Deus Ex",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$43.35",
+    "price": "48.55",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1351803828751
+    "ageAllowed": 17,
+    "releaseDate": 1360618104419,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 56,
-    "category": ["pc"],
+    "category": ["xbox"],
     "title": "Baldur's Gate II: Shadows of Amn",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$40.96",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "20.25",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1397631104481
+    "ageAllowed": 18,
+    "releaseDate": 1399720169171,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 57,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Ms. Pac-Man",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$21.97",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "44.29",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1379293200449
+    "ageAllowed": 9,
+    "releaseDate": 1381356977626,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 58,
-    "category": ["ps"],
+    "category": ["xbox", "pc"],
     "title": "Counter-Strike 1.6",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$24.79",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "42.65",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1396740323466
+    "ageAllowed": 11,
+    "releaseDate": 1396177721138,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 59,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Left 4 Dead 2",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$49.70",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "16.25",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1377659948186
+    "ageAllowed": 9,
+    "releaseDate": 1375860384513,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 60,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "EarthBound",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$23.19",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "26.17",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1375356041990
+    "ageAllowed": 9,
+    "releaseDate": 1357973202736,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 61,
-    "category": [],
+    "category": ["ps"],
     "title": "Resident Evil",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$42.94",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "32.59",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1379685283723
+    "ageAllowed": 12,
+    "releaseDate": 1373362604085,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 62,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "Diablo II",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$21.40",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "19.71",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1362214360261
+    "ageAllowed": 17,
+    "releaseDate": 1377903400963,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 63,
-    "category": ["pc"],
+    "category": ["ps"],
     "title": "StarCraft",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$20.24",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "26.12",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1398712175163
+    "ageAllowed": 17,
+    "releaseDate": 1379545910685,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 64,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "World of Warcraft",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$29.77",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "40.14",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1385422233589
+    "ageAllowed": 9,
+    "releaseDate": 1379334073256,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 65,
-    "category": ["ps"],
+    "category": ["xbox"],
     "title": "Star Wars: Knights of the Old Republic",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$24.63",
+    "price": "34.16",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "15+",
-    "releaseDate": 1386895546881
+    "ageAllowed": 8,
+    "releaseDate": 1350944394641,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 66,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Fallout: New Vegas",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$42.40",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "39.67",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1378029713665
+    "ageAllowed": 18,
+    "releaseDate": 1368255663311,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 67,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Final Fantasy VI",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$32.87",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "38.64",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1384086562136
+    "ageAllowed": 10,
+    "releaseDate": 1351406912861,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 68,
-    "category": ["pc"],
+    "category": ["xbox"],
     "title": "Mass Effect 2",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$28.86",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "32.17",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1390855221754
+    "ageAllowed": 11,
+    "releaseDate": 1356715842215,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 69,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Pokémon Yellow",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$25.52",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "26.27",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1374519893097
+    "ageAllowed": 10,
+    "releaseDate": 1385547886977,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 70,
     "category": ["xbox"],
     "title": "Bloodborne",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$37.11",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "28.28",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1354967151636
+    "ageAllowed": 10,
+    "releaseDate": 1398205462702,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 71,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Metroid Prime",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$45.67",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "31.12",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1390769461332
+    "ageAllowed": 13,
+    "releaseDate": 1394298144784,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 72,
     "category": ["xbox"],
     "title": "Resident Evil 4",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$49.19",
+    "price": "25.70",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1355760918732
+    "ageAllowed": 18,
+    "releaseDate": 1368144619680,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 73,
-    "category": ["ps"],
+    "category": ["xbox"],
     "title": "Shadow of the Colossus",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$49.85",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "44.23",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1391732737287
+    "ageAllowed": 13,
+    "releaseDate": 1363763111824,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 74,
-    "category": [],
+    "category": ["xbox"],
     "title": "Metal Gear Solid",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$48.73",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "22.51",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1362972766487
+    "ageAllowed": 17,
+    "releaseDate": 1362426850959,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 75,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "God of War",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$19.33",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "32.57",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1353651095497
+    "ageAllowed": 12,
+    "releaseDate": 1377186247964,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 76,
-    "category": ["pc"],
+    "category": ["ps"],
     "title": "The Witcher 3: Wild Hunt",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$29.47",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "30.58",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1353619496182
+    "ageAllowed": 13,
+    "releaseDate": 1363850922898,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 77,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "BioShock",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$25.76",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "27.93",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1385609788010
+    "ageAllowed": 17,
+    "releaseDate": 1358996898518,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 78,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "Sid Meier's Civilization IV",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$44.13",
+    "price": "17.59",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1387008187183
+    "ageAllowed": 14,
+    "releaseDate": 1363648291835,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 79,
-    "category": ["ps"],
+    "category": ["xbox"],
     "title": "The Legend of Zelda: Ocarina of Time",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$34.68",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "24.71",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "14+",
-    "releaseDate": 1354238469472
+    "ageAllowed": 10,
+    "releaseDate": 1356153172058,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 80,
-    "category": [],
+    "category": ["xbox", "ps", "pc"],
     "title": "Minecraft",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$22.78",
+    "price": "19.41",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1397032814498
+    "ageAllowed": 18,
+    "releaseDate": 1378204674923,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 81,
-    "category": ["pc"],
+    "category": ["xbox"],
     "title": "Halo: Combat Evolved",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$29.62",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "36.24",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1398592642754
+    "ageAllowed": 12,
+    "releaseDate": 1377738607779,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 82,
-    "category": ["pc"],
+    "category": ["ps"],
     "title": "Half-Life",
-    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
-    "price": "$47.89",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "19.40",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1374769887786
+    "ageAllowed": 8,
+    "releaseDate": 1358331199216,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 83,
-    "category": [],
+    "category": ["ps"],
     "title": "Metal Gear Solid 3: Snake Eater",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$24.97",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "33.85",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1387823040746
+    "ageAllowed": 14,
+    "releaseDate": 1351052894835,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 84,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "The Last of Us",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$42.89",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "15.63",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "13+",
-    "releaseDate": 1350442139044
+    "ageAllowed": 9,
+    "releaseDate": 1359077930438,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 85,
-    "category": [],
+    "category": ["ps"],
     "title": "Doom",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$27.22",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "19.74",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1372002168267
+    "ageAllowed": 15,
+    "releaseDate": 1391546170931,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 86,
-    "category": ["xbox"],
+    "category": ["ps"],
     "title": "Chrono Trigger",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$29.40",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "35.93",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1374380033629
+    "ageAllowed": 7,
+    "releaseDate": 1374517486621,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 87,
-    "category": ["ps"],
+    "category": ["xbox", "pc"],
     "title": "Portal",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$16.94",
+    "price": "37.14",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1395262699572
+    "ageAllowed": 16,
+    "releaseDate": 1399291790435,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 88,
-    "category": [],
+    "category": ["xbox"],
     "title": "Dark Souls",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$16.62",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "43.98",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "11+",
-    "releaseDate": 1399751479491
+    "ageAllowed": 17,
+    "releaseDate": 1374096813224,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 89,
-    "category": [],
+    "category": ["ps"],
     "title": "Street Fighter II",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$21.52",
+    "price": "27.23",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1397272608968
+    "ageAllowed": 18,
+    "releaseDate": 1371539554900,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 90,
     "category": ["xbox"],
     "title": "Super Mario Bros.",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$37.24",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "35.96",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1375848714287
+    "ageAllowed": 9,
+    "releaseDate": 1392217423810,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 91,
-    "category": ["pc"],
+    "category": ["xbox", "pc"],
     "title": "Halo 2",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$24.98",
+    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
+    "price": "48.79",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "9+",
-    "releaseDate": 1355567000921
+    "ageAllowed": 9,
+    "releaseDate": 1386311901824,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "moba"
   },
   {
     "id": 92,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Castlevania: Symphony of the Night",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$49.25",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "27.10",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1366941121056
+    "ageAllowed": 8,
+    "releaseDate": 1353932411234,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 93,
-    "category": [],
+    "category": ["ps"],
     "title": "Grand Theft Auto V",
-    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
-    "price": "$38.87",
+    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
+    "price": "47.80",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "17+",
-    "releaseDate": 1396665113510
+    "ageAllowed": 17,
+    "releaseDate": 1399028127412,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 94,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Super Mario 64",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$44.51",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "33.71",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1390019535858
+    "ageAllowed": 6,
+    "releaseDate": 1383761978556,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Racing"
   },
   {
     "id": 95,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Red Dead Redemption",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$25.37",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "21.45",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1352441397601
+    "ageAllowed": 18,
+    "releaseDate": 1354777667411,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 96,
-    "category": ["ps"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Half-Life 2",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$15.47",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "21.65",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1383892434975
+    "ageAllowed": 15,
+    "releaseDate": 1363001182278,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 97,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "Tetris",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$18.85",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "49.10",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1388349336230
+    "ageAllowed": 10,
+    "releaseDate": 1359840920092,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 98,
-    "category": [],
+    "category": ["xbox", "pc"],
     "title": "Super Mario Bros. 3",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$37.57",
+    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
+    "price": "45.80",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1357674612433
+    "ageAllowed": 12,
+    "releaseDate": 1371723801751,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Fighting"
   },
   {
     "id": 99,
-    "category": ["xbox"],
+    "category": ["ps"],
     "title": "The Legend of Zelda: Breath of the Wild",
-    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
-    "price": "$32.35",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "24.86",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1354926069649
+    "ageAllowed": 18,
+    "releaseDate": 1371699502158,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 100,
-    "category": [],
+    "category": ["xbox"],
     "title": "Super Metroid",
-    "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
-    "price": "$24.70",
+    "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
+    "price": "31.24",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "12+",
-    "releaseDate": 1389473319497
+    "ageAllowed": 6,
+    "releaseDate": 1369665201261,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   },
   {
     "id": 101,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Portal 2",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$26.73",
+    "price": "34.93",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "8+",
-    "releaseDate": 1368679249253
+    "ageAllowed": 7,
+    "releaseDate": 1352290343929,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "filled-star"
+    ],
+    "genre": "rpg"
   },
   {
     "id": 102,
-    "category": ["ps"],
+    "category": ["xbox"],
     "title": "The Legend of Zelda: A Link to the Past",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$18.93",
+    "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
+    "price": "29.84",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "10+",
-    "releaseDate": 1398627896131
+    "ageAllowed": 12,
+    "releaseDate": 1388134714436,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 103,
-    "category": ["xbox"],
+    "category": ["xbox", "ps", "pc"],
     "title": "Super Mario World",
-    "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
-    "price": "$23.67",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "30.38",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "18+",
-    "releaseDate": 1354920615748
+    "ageAllowed": 8,
+    "releaseDate": 1392694632621,
+    "rating": [
+      "filled-star",
+      "filled-star",
+      "filled-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Shooter"
   },
   {
     "id": 104,
-    "category": ["xbox"],
+    "category": ["xbox", "pc"],
     "title": "Ring Of Revolution",
-    "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
-    "price": "$16.18",
+    "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
+    "price": "39.55",
     "description": "Mauris suscipit dui eu elit pellentesque ornare. Etiam arcu quam, pulvinar ac lorem eget, placerat semper arcu. Suspendisse maximus dui non convallis faucibus. Nam enim erat, aliquam at iaculis consequat, consequat eget purus.",
-    "ageAllowed": "16+",
-    "releaseDate": 1362803129057
+    "ageAllowed": 12,
+    "releaseDate": 1396211629608,
+    "rating": [
+      "filled-star",
+      "empty-star",
+      "empty-star",
+      "empty-star",
+      "empty-star"
+    ],
+    "genre": "Strategy"
   }
 ]

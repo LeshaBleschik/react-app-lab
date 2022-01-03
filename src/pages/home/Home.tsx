@@ -19,7 +19,7 @@ const Home = ({ games }: Props) => (
           className="catagories_container__link"
         >
           <img
-            src="../images/icons8-windows-10-50.png"
+            src="../images/pc.png"
             alt="personal computer"
             className="catagories_container__image"
           />
@@ -30,7 +30,7 @@ const Home = ({ games }: Props) => (
           className="catagories_container__link"
         >
           <img
-            src="../images/icons8-playstation-50.png"
+            src="../images/ps.png"
             alt="playstation 5"
             className="catagories_container__image"
           />
@@ -41,7 +41,7 @@ const Home = ({ games }: Props) => (
           className="catagories_container__link"
         >
           <img
-            src="../images/icons8-xbox-50.png"
+            src="../images/xbox.png"
             alt="xbox one"
             className="catagories_container__image"
           />

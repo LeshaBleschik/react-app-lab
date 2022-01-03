@@ -11,23 +11,58 @@ router.get("/get-top-products", (req, res) => {
   const gamesSortedByDate = games
     .sort((a, b) => a.releaseDate - b.releaseDate)
     .slice(0, 3)
-  return res.send(gamesSortedByDate)
+  res.send(gamesSortedByDate)
 })
 
 // GAME PRODUCTS LIST
 router.get(`/products`, (req, res) => {
   let listOfGames = getGames()
-  const searchQuery = req.query.search?.toLowerCase() || ""
-  const categoryQuery = req.query.category
-  if (categoryQuery) {
+  const { category, search, sortType, sortDir, genre, age } = req.query
+  if (category) {
+    listOfGames = listOfGames.filter((game) => game.category.includes(category))
+  }
+  if (search) {
     listOfGames = listOfGames.filter((game) =>
-      game.category.includes(categoryQuery)
+      game.title.toLowerCase().includes(search.toLowerCase() || "")
     )
   }
-  if (searchQuery) {
-    listOfGames = listOfGames.filter((game) =>
-      game.title.toLowerCase().includes(searchQuery)
+  if (sortType === "rating" && sortDir === "Asc") {
+    listOfGames = listOfGames.sort(
+      (a, b) =>
+        a.rating.filter((star) => star === "filled-star").length -
+        b.rating.filter((star) => star === "filled-star").length
     )
+  }
+  if (sortType === "rating" && sortDir === "Desc") {
+    listOfGames = listOfGames.sort(
+      (a, b) =>
+        b.rating.filter((star) => star === "filled-star").length -
+        a.rating.filter((star) => star === "filled-star").length
+    )
+  }
+  if (sortType === "price" && sortDir === "Asc") {
+    listOfGames = listOfGames.sort(
+      (a, b) => parseFloat(a.price) - parseFloat(b.price)
+    )
+  }
+  if (sortType === "price" && sortDir === "Desc") {
+    listOfGames = listOfGames.sort(
+      (a, b) => parseFloat(b.price) - parseFloat(a.price)
+    )
+  }
+  if (sortType === "date" && sortDir === "Asc") {
+    listOfGames = listOfGames.sort((a, b) => a.releaseDate - b.releaseDate)
+  }
+  if (sortType === "date" && sortDir === "Desc") {
+    listOfGames = listOfGames.sort((a, b) => b.releaseDate - a.releaseDate)
+  }
+  if (genre) {
+    listOfGames = listOfGames.filter((game) =>
+      game.genre.toLowerCase().includes(genre)
+    )
+  }
+  if (age) {
+    listOfGames = listOfGames.filter((game) => game.ageAllowed === +age)
   }
   res.send(listOfGames)
 })
