@@ -6,10 +6,12 @@ type InputProps = {
   id: string
   className?: string
   placeholder: string
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  value: string
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
+  value?: string
   autocomplete?: string
+  maxLength?: number
 }
+
 const Input = ({
   type = "text",
   name,
@@ -19,6 +21,7 @@ const Input = ({
   onChange,
   value,
   autocomplete,
+  maxLength,
 }: InputProps) => (
   <input
     type={type}
@@ -29,6 +32,7 @@ const Input = ({
     onChange={onChange}
     value={value}
     autoComplete={autocomplete}
+    maxLength={maxLength}
   />
 )
 
@@ -36,6 +40,9 @@ Input.defaultProps = {
   type: "text",
   className: "",
   autocomplete: "off",
+  onChange: false,
+  value: "",
+  maxLength: "",
 }
 
 export default Input

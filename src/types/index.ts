@@ -11,3 +11,16 @@ export type User = {
   userName: string
   password: string
 } | null
+
+export type UserPayload = {
+  userName: string
+  tokens?: string
+  fields?: [string]
+  password: string
+  image?: string
+}
+
+export type UserAction = {
+  type: string
+  payload?: UserPayload
+}

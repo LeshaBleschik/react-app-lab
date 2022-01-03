@@ -6,8 +6,10 @@ type ModalProps = {
   children: JSX.Element
   signInIsOpen?: boolean
   signUpIsOpen?: boolean
+  passwordIsOpen?: boolean
   signInOnClose?: () => void
   signUpOnClose?: () => void
+  passwordClickToggle?: () => void
 }
 
 const Modal = ({
@@ -16,6 +18,8 @@ const Modal = ({
   signInOnClose,
   signUpIsOpen,
   signUpOnClose,
+  passwordClickToggle,
+  passwordIsOpen,
 }: ModalProps) => {
   const portal = document.getElementById("portal") as HTMLElement
   const modalRef = useRef() as React.MutableRefObject<HTMLInputElement>
@@ -27,6 +31,9 @@ const Modal = ({
     if (!modalRef.current?.contains(event.target as Node) && signUpIsOpen) {
       signUpOnClose?.()
     }
+    if (!modalRef.current?.contains(event.target as Node) && passwordIsOpen) {
+      passwordClickToggle?.()
+    }
   }
 
   const closeOnKeyPress = (event: KeyboardEvent) => {
@@ -35,6 +42,9 @@ const Modal = ({
     }
     if (event.key === "Escape" && signUpIsOpen) {
       signUpOnClose?.()
+    }
+    if (event.key === "Escape" && passwordIsOpen) {
+      passwordClickToggle?.()
     }
   }
 
@@ -47,7 +57,7 @@ const Modal = ({
     }
   })
 
-  if (!signInIsOpen && !signUpIsOpen) return null
+  if (!signInIsOpen && !signUpIsOpen && !passwordIsOpen) return null
 
   return ReactDOM.createPortal(
     <div className="background_overlay">
@@ -58,8 +68,10 @@ const Modal = ({
           onClick={() => {
             if (signInIsOpen) {
               signInOnClose?.()
-            } else {
+            } else if (signUpIsOpen) {
               signUpOnClose?.()
+            } else {
+              passwordClickToggle?.()
             }
           }}
         >
@@ -78,8 +90,10 @@ const Modal = ({
 Modal.defaultProps = {
   singInIsVisible: null,
   singUpIsVisible: null,
+  passwordIsOpen: null,
   signInOnClose: () => false,
   signUpOnClose: () => false,
+  passwordClickToggle: () => false,
 }
 
 export default Modal

@@ -35,3 +35,20 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .background_overlay__modal_wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .background_overlay {
+    &__modal_wrapper {
+      width: 75%;
+    }
+    &__close_icon {
+      font-size: 2.5rem;
+    }
+  }
+}

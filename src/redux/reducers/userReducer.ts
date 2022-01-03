@@ -1,10 +1,12 @@
-import { REGISTRATION, SIGN_IN } from "api/constants"
+import {
+  CHANGE_PASSWORD,
+  REGISTRATION,
+  SAVE_PROFILE,
+  SIGN_IN,
+} from "api/constants"
 import axios from "axios"
-
-type UserAction = {
-  type: string
-  payload?: string
-}
+import { REMOVE_USER, SET_USER } from "redux/constants"
+import { UserAction } from "types"
 
 type SignUpData = {
   regUserName: string
@@ -19,13 +21,19 @@ type SignInData = {
   signInError?: string
 }
 
+type ModifiedUserData = {
+  userName: string
+  newName: string
+  fields: string
+}
+
 // eslint-disable-next-line default-param-last
 export const userReducer = (state = null, action: UserAction) => {
   switch (action.type) {
-    case "SET_USER": {
-      return { userName: action.payload }
+    case SET_USER: {
+      return { ...action.payload }
     }
-    case "REMOVE_USER": {
+    case REMOVE_USER: {
       return null
     }
     default:
@@ -33,11 +41,11 @@ export const userReducer = (state = null, action: UserAction) => {
   }
 }
 
-export const signIn = () => async (userData: SignInData) => {
+export const signIn = async (userData: SignInData) => {
   try {
     const response = await axios.post(SIGN_IN, userData)
     if (response.status === 201) {
-      return true
+      return response
     }
     return false
   } catch {
@@ -45,11 +53,35 @@ export const signIn = () => async (userData: SignInData) => {
   }
 }
 
-export const registration = () => async (userData: SignUpData) => {
+export const registration = async (userData: SignUpData) => {
   try {
     const response = await axios.put(REGISTRATION, userData)
     if (response.status === 200) {
-      return true
+      return response
+    }
+    return false
+  } catch {
+    return false
+  }
+}
+
+export const changePassword = async (userData: SignInData) => {
+  try {
+    const response = await axios.post(CHANGE_PASSWORD, userData)
+    if (response) {
+      return response
+    }
+    return false
+  } catch {
+    return false
+  }
+}
+
+export const saveProfile = async (userData: ModifiedUserData) => {
+  try {
+    const response = await axios.post(SAVE_PROFILE, userData)
+    if (response) {
+      return response
     }
     return false
   } catch {
