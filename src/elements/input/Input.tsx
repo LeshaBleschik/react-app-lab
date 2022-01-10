@@ -2,12 +2,12 @@ import React, { HTMLInputTypeAttribute } from "react"
 
 type InputProps = {
   type?: HTMLInputTypeAttribute
-  name: string
-  id: string
+  name?: string
+  id?: string
   className?: string
-  placeholder: string
+  placeholder?: string
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
-  value?: string
+  value?: string | number
   autocomplete?: string
   maxLength?: number
 }
@@ -43,6 +43,9 @@ Input.defaultProps = {
   onChange: false,
   value: "",
   maxLength: "",
+  name: "",
+  id: "",
+  placeholder: "",
 }
 
 export default Input

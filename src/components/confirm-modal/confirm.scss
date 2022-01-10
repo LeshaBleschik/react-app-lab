@@ -1,0 +1,9 @@
+@import "styles/variables.scss";
+
+.success_msg {
+  display: grid;
+  place-items: center;
+  font-family: $heading-font;
+  text-align: center;
+  padding: 5rem 3rem;
+}

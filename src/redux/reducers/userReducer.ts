@@ -6,7 +6,7 @@ import {
 } from "api/constants"
 import axios from "axios"
 import { REMOVE_USER, SET_USER } from "redux/constants"
-import { UserAction } from "types"
+import { UserAction, UserData } from "types"
 
 type SignUpData = {
   regUserName: string
@@ -28,10 +28,15 @@ type ModifiedUserData = {
 }
 
 // eslint-disable-next-line default-param-last
-export const userReducer = (state = null, action: UserAction) => {
+export const userReducer = (
+  // eslint-disable-next-line default-param-last
+  state: null | UserData = null,
+  action: UserAction
+): null | UserData => {
   switch (action.type) {
     case SET_USER: {
-      return { ...action.payload }
+      if (action.payload) return { ...action.payload }
+      return state
     }
     case REMOVE_USER: {
       return null

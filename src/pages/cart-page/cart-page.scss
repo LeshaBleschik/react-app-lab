@@ -1,0 +1,107 @@
+@import "styles/variables.scss";
+
+.cart_page {
+  &__title {
+    font-size: 5rem;
+    padding: 2rem 0 0 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8rem;
+      left: 2rem;
+      width: 95%;
+      border-bottom: 0.2rem solid $light;
+    }
+  }
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 5rem;
+    border-collapse: collapse;
+  }
+  &__head::after {
+    content: "";
+    display: block;
+    height: 3rem;
+    width: 100%;
+  }
+  &__th {
+    font-size: 3.2rem;
+  }
+  &__tb {
+    font-size: 2.6rem;
+  }
+  &__tb td {
+    text-align: center;
+    border-bottom: 0.1rem solid $light;
+    padding-top: 2.5rem;
+  }
+  &__amount {
+    background-color: $main-bg;
+    border: 0.1rem solid $light;
+    color: $light;
+    font-size: 1.7rem;
+    max-width: 35%;
+    padding: 0.3rem 0;
+    outline: none;
+    margin-bottom: 0.4rem;
+    text-align: center;
+  }
+  &__buy_segment {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+  }
+  &__empty_cart {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  &__remove {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  &__trash_icon {
+    font-size: 2.5rem;
+    color: $button-color;
+    &:hover,
+    &:focus {
+      color: $button-color-hover;
+    }
+  }
+  &__balance {
+    font-size: 3.5rem;
+  }
+  &__platform {
+    border: 0.1rem solid $light;
+    width: 37%;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    margin-left: 7.4rem;
+    position: relative;
+  }
+  &__platform_inside {
+    background-color: $main-bg;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 2rem;
+    padding: 0.2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: $light;
+  }
+  .fa-sort-down {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
