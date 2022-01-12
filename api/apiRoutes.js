@@ -26,35 +26,25 @@ router.get(`/products`, (req, res) => {
       game.title.toLowerCase().includes(search.toLowerCase() || "")
     )
   }
-  if (sortType === "rating" && sortDir === "Asc") {
-    listOfGames = listOfGames.sort(
-      (a, b) =>
-        a.rating.filter((star) => star === "filled-star").length -
-        b.rating.filter((star) => star === "filled-star").length
-    )
-  }
-  if (sortType === "rating" && sortDir === "Desc") {
-    listOfGames = listOfGames.sort(
-      (a, b) =>
-        b.rating.filter((star) => star === "filled-star").length -
-        a.rating.filter((star) => star === "filled-star").length
-    )
-  }
-  if (sortType === "price" && sortDir === "Asc") {
-    listOfGames = listOfGames.sort(
-      (a, b) => parseFloat(a.price) - parseFloat(b.price)
-    )
-  }
-  if (sortType === "price" && sortDir === "Desc") {
-    listOfGames = listOfGames.sort(
-      (a, b) => parseFloat(b.price) - parseFloat(a.price)
-    )
-  }
-  if (sortType === "date" && sortDir === "Asc") {
-    listOfGames = listOfGames.sort((a, b) => a.releaseDate - b.releaseDate)
-  }
-  if (sortType === "date" && sortDir === "Desc") {
-    listOfGames = listOfGames.sort((a, b) => b.releaseDate - a.releaseDate)
+  if (sortDir === "Asc" || sortDir === "Desc") {
+    const k = sortDir === "Asc" ? 1 : -1
+    if (sortType === "rating") {
+      listOfGames = listOfGames.sort(
+        (a, b) =>
+          a.rating.filter((star) => star === "filled-star").length * k -
+          b.rating.filter((star) => star === "filled-star").length * k
+      )
+    }
+    if (sortType === "price") {
+      listOfGames = listOfGames.sort(
+        (a, b) => parseFloat(a.price) * k - parseFloat(b.price) * k
+      )
+    }
+    if (sortType === "date") {
+      listOfGames = listOfGames.sort(
+        (a, b) => a.releaseDate * k - b.releaseDate * k
+      )
+    }
   }
   if (genre) {
     listOfGames = listOfGames.filter((game) =>

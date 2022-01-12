@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react"
 import Input from "elements/input/Input"
 import "./profile.scss"
 import Button from "elements/button/Button"
-import { useSelector, RootStateOrAny, useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import { saveProfile } from "redux/reducers/userReducer"
 import { setUser } from "redux/actions"
 import axios from "axios"
 import { SAVE_IMAGE } from "api/constants"
+import { getUserSelector } from "redux/selectors"
 
 type PasswordProps = {
   passwordClickToggle: () => void
@@ -29,7 +30,7 @@ interface File extends Blob {
 }
 
 const Profile = ({ passwordClickToggle }: PasswordProps) => {
-  const user = useSelector((state: RootStateOrAny) => state.user)
+  const user = useSelector(getUserSelector)
   const [profileData, setProfileData] = useState({
     user: "",
     profileDescription: "",

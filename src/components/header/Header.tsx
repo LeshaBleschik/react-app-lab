@@ -1,12 +1,13 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE } from "routes"
+import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE, CART_PAGE } from "routes"
 import { useNavigate } from "react-router"
 import "./header.scss"
-import { useDispatch, RootStateOrAny, useSelector } from "react-redux"
-import { removeUser } from "redux/actions"
+import { useDispatch, useSelector } from "react-redux"
+import { deleteCart, removeUser } from "redux/actions"
 import { DELETE_TOKEN } from "api/constants"
 import axios from "axios"
+import { getCartSelector, getUserSelector } from "redux/selectors"
 
 type HeaderProps = {
   signInOpenClick: () => void
@@ -14,9 +15,11 @@ type HeaderProps = {
 }
 
 const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
-  const user = useSelector((state: RootStateOrAny) => state.user)
+  const user = useSelector(getUserSelector)
+  const cart = useSelector(getCartSelector)
   const dispatch = useDispatch()
   const [isActive, setIsActive] = useState(false)
+  const [product, setProduct] = useState(0)
   const navigate = useNavigate()
 
   const clickHandler = () => {
@@ -40,12 +43,20 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
       })
     localStorage.clear()
     dispatch(removeUser())
+    dispatch(deleteCart())
+    setProduct(0)
     navigate("/", { replace: true })
   }
 
   const profileClickHandler = () => {
     navigate("/profile", { replace: true })
   }
+
+  useEffect(() => {
+    if (cart) {
+      setProduct(cart?.length)
+    }
+  }, [cart])
 
   return (
     <header className="header">
@@ -143,14 +154,15 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
           </li>
           {user && (
             <li className="header__item">
-              <button
+              <Link
+                to={CART_PAGE}
                 className="header__btn header__logged_in"
                 type="button"
                 onClick={clickHandler}
               >
                 <i className="fas fa-shopping-cart" />
-                <span>0</span>
-              </button>
+                <span>{product}</span>
+              </Link>
             </li>
           )}
           <li className="header__item">

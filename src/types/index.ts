@@ -14,7 +14,7 @@ export type User = {
   password: string
 } | null
 
-export type UserPayload = {
+export type UserData = {
   userName: string
   tokens?: string
   fields?: [string]
@@ -24,5 +24,13 @@ export type UserPayload = {
 
 export type UserAction = {
   type: string
-  payload?: UserPayload
+  payload?: UserData
+}
+
+export type CartData = {
+  id: number
+  name: string
+  platform: string[]
+  price: number
+  amount: number
 }

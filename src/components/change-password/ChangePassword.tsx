@@ -3,8 +3,9 @@ import Button from "elements/button/Button"
 import Input from "elements/input/Input"
 import "./change-password.scss"
 import { changePassword } from "redux/reducers/userReducer"
-import { RootStateOrAny, useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { setUser } from "redux/actions"
+import { getUserSelector } from "redux/selectors"
 
 type SignUpData = {
   chPassword: string
@@ -19,7 +20,7 @@ type PaswordProps = {
 
 const ChangePassword = ({ passwordClickToggle }: PaswordProps) => {
   const dispatch = useDispatch()
-  const user = useSelector((state: RootStateOrAny) => state.user)
+  const user = useSelector(getUserSelector)
   const [userData, setUserData] = useState<SignUpData>({
     chPassword: "",
     chRepeatPassword: "",

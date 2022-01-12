@@ -7,6 +7,7 @@ import {
   WRONG_PATH,
   PRODUCTS_PAGE,
   PROFILE_PAGE,
+  CART_PAGE,
 } from "routes"
 import {
   BrowserRouter as Router,
@@ -17,6 +18,8 @@ import {
 import { Game } from "types"
 import { useDispatch } from "react-redux"
 import { setUser } from "redux/actions"
+import ConfirmMesage from "components/confirm-modal/ConfirmMesage"
+import CartPage from "pages/cart-page/CartPage"
 import ProtectedRoute from "components/protected-route/ProtectedRoute"
 import Profile from "pages/profile-page/Profile"
 import ChangePassword from "components/change-password/ChangePassword"
@@ -35,6 +38,7 @@ const App = () => {
   const [signInIsOpen, setSignInIsOpen] = useState<boolean>(false)
   const [signUpIsOpen, setSignUpIsOpen] = useState(false)
   const [passwordIsOpen, setPasswordIsOpen] = useState(false)
+  const [confirmIsOpen, setConfirmIsOpen] = useState(false)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -72,6 +76,10 @@ const App = () => {
     setPasswordIsOpen(!passwordIsOpen)
   }
 
+  const confirmWindowToggle = () => {
+    setConfirmIsOpen(!confirmIsOpen)
+  }
+
   useEffect((): void => {
     axios
       .get<Game[]>(GET_TOP_PRODUCTS)
@@ -103,6 +111,12 @@ const App = () => {
         >
           <ChangePassword passwordClickToggle={passwordClickToggle} />
         </Modal>
+        <Modal
+          confirmIsOpen={confirmIsOpen}
+          confirmWindowToggle={confirmWindowToggle}
+        >
+          <ConfirmMesage />
+        </Modal>
         <Routes>
           <Route path={HOME_PAGE} element={<Home games={games} />} />
           <Route path={ABOUT_PAGE} element={<About />} />
@@ -115,6 +129,10 @@ const App = () => {
                 <Profile passwordClickToggle={passwordClickToggle} />
               </ProtectedRoute>
             }
+          />
+          <Route
+            path={CART_PAGE}
+            element={<CartPage confirmWindowToggle={confirmWindowToggle} />}
           />
         </Routes>
       </div>

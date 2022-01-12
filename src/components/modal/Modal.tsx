@@ -4,9 +4,11 @@ import "./modal.scss"
 
 type ModalProps = {
   children: JSX.Element
+  confirmIsOpen?: boolean
   signInIsOpen?: boolean
   signUpIsOpen?: boolean
   passwordIsOpen?: boolean
+  confirmWindowToggle?: () => void
   signInOnClose?: () => void
   signUpOnClose?: () => void
   passwordClickToggle?: () => void
@@ -15,6 +17,8 @@ type ModalProps = {
 const Modal = ({
   children,
   signInIsOpen,
+  confirmIsOpen,
+  confirmWindowToggle,
   signInOnClose,
   signUpIsOpen,
   signUpOnClose,
@@ -34,6 +38,9 @@ const Modal = ({
     if (!modalRef.current?.contains(event.target as Node) && passwordIsOpen) {
       passwordClickToggle?.()
     }
+    if (!modalRef.current?.contains(event.target as Node) && confirmIsOpen) {
+      confirmWindowToggle?.()
+    }
   }
 
   const closeOnKeyPress = (event: KeyboardEvent) => {
@@ -46,6 +53,9 @@ const Modal = ({
     if (event.key === "Escape" && passwordIsOpen) {
       passwordClickToggle?.()
     }
+    if (event.key === "Escape" && confirmIsOpen) {
+      confirmWindowToggle?.()
+    }
   }
 
   useEffect(() => {
@@ -57,7 +67,8 @@ const Modal = ({
     }
   })
 
-  if (!signInIsOpen && !signUpIsOpen && !passwordIsOpen) return null
+  if (!signInIsOpen && !signUpIsOpen && !passwordIsOpen && !confirmIsOpen)
+    return null
 
   return ReactDOM.createPortal(
     <div className="background_overlay">
@@ -70,8 +81,10 @@ const Modal = ({
               signInOnClose?.()
             } else if (signUpIsOpen) {
               signUpOnClose?.()
-            } else {
+            } else if (passwordIsOpen) {
               passwordClickToggle?.()
+            } else {
+              confirmWindowToggle?.()
             }
           }}
         >
