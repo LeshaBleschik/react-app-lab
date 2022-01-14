@@ -7,6 +7,7 @@ export type Game = {
   ageAllowed: string
   category: string[]
   rating: string[]
+  genre: string
 }
 
 export type User = {
@@ -33,4 +34,30 @@ export type CartData = {
   platform: string[]
   price: number
   amount: number
+}
+
+export type GameInfo = {
+  name: string
+  image: string
+  genre: string
+  price: string
+  description: string
+  age: string
+  category: string[]
+}
+
+export type Action = {
+  type: string
+}
+
+export type Card = {
+  id?: number
+  title: string
+  image: string
+  price: string
+  description: string
+  age: string
+  rating: string
+  genre: string
+  category: string[]
 }

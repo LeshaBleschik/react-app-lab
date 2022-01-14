@@ -54,9 +54,9 @@
     font-size: 4rem;
     text-align: center;
   }
-  &__buy_btn {
-    display: block;
-    margin: 0 auto;
+  &__btn_group {
+    display: flex;
+    justify-content: space-evenly;
   }
   &__category {
     position: absolute;

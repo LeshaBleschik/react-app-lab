@@ -2,7 +2,7 @@ import React from "react"
 import "./button.scss"
 
 type ButtonProps = {
-  className: string
+  className?: string
   title: string
   type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"]
   onClick?: () => void
@@ -26,6 +26,7 @@ const Button = ({
 Button.defaultProps = {
   type: "button",
   onClick: () => false,
+  className: "",
 }
 
 export default Button

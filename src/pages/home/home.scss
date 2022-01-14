@@ -63,6 +63,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__error {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1050px) {

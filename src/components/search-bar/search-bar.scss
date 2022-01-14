@@ -13,6 +13,7 @@
   outline: none;
   display: flex;
   align-items: center;
+  position: relative;
   &:focus-within {
     border: 0.2rem solid $search-bar-focus;
   }
@@ -60,4 +61,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.create_card {
+  position: absolute;
+  right: 2rem;
+  top: 7.4rem;
+  height: 4.5rem;
+  padding: 0 1rem;
+  width: auto;
 }

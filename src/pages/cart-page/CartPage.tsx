@@ -14,16 +14,13 @@ type CartProps = {
 const CartPage = ({ confirmWindowToggle }: CartProps) => {
   const cart = useSelector(getCartSelector)
   const dispatch = useDispatch()
-  let total
-
-  if (cart?.length) {
-    total = cart
-      .reduce(
+  const total =
+    cart
+      ?.reduce(
         (acc: number, item: CartData) => acc + item.amount * item.price,
         0
       )
-      .toFixed(2)
-  }
+      .toFixed(2) ?? 0
 
   const getDate = () => {
     const date = new Date()

@@ -1,0 +1,96 @@
+@import "styles/variables.scss";
+
+.edit_card {
+  &__title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  &__card_details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  &__img_section {
+    max-width: 30%;
+  }
+  &__info_section {
+    max-width: 70%;
+  }
+  &__image {
+    width: 100%;
+    height: 50%;
+  }
+  &__section_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__label {
+    font-size: 1.7rem;
+  }
+  &__form_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__input,
+  &__text_area,
+  &__selection_group {
+    background-color: $main-bg;
+    font-family: $main-font;
+    color: $light;
+    border: 0.1rem solid $light;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+  }
+  &__input {
+    outline: none;
+    width: 70%;
+    &:focus {
+      border: 0.1rem solid $search-bar-focus;
+    }
+  }
+  &__text_area_set_width {
+    width: 70%;
+  }
+  &__text_area {
+    width: 100%;
+    outline: none;
+    resize: none;
+    &:focus {
+      border: 0.1rem solid $search-bar-focus;
+    }
+  }
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $main-bg;
+    font-family: $main-font;
+    color: $light;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+  }
+  &__platform_title {
+    margin-bottom: 2rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3.2rem;
+      left: 0;
+      border-bottom: 0.1rem solid $light;
+      width: 100%;
+    }
+  }
+  &__buttons_group {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__ckeckbox {
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+  }
+}

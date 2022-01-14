@@ -2,7 +2,10 @@
   {
     "id": 1,
     "title": "Rocket League",
-    "category": ["ps", "pc"],
+    "category": [
+      "ps",
+      "pc"
+    ],
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "23.34",
     "description": "Rocket League is a video game that involves the combination of car racing and soccer, created and developed by Psyonix Studios. In the game, two teams of players are pitted against each other in a futuristic arena to duke it out in five-minute matches.",
@@ -19,7 +22,11 @@
   },
   {
     "id": 2,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Grand Theft Auto V",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "29.99",
@@ -37,7 +44,10 @@
   },
   {
     "id": 3,
-    "category": ["ps", "pc"],
+    "category": [
+      "ps",
+      "pc"
+    ],
     "title": "Apex Legends",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "19.99",
@@ -55,7 +65,11 @@
   },
   {
     "id": 4,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Pokémon Go",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "48.24",
@@ -73,7 +87,11 @@
   },
   {
     "id": 5,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Borderlands 2",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "31.61",
@@ -91,7 +109,11 @@
   },
   {
     "id": 6,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Divinity: Original Sin 2",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "26.59",
@@ -109,7 +131,11 @@
   },
   {
     "id": 7,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Dishonored",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "19.46",
@@ -127,7 +153,11 @@
   },
   {
     "id": 8,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Final Fantasy VII",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "24.61",
@@ -145,7 +175,10 @@
   },
   {
     "id": 9,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Assassin's Creed IV: Black Flag",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "25.39",
@@ -163,7 +196,9 @@
   },
   {
     "id": 10,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Monkey Island 2: LeChuck's Revenge",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "32.22",
@@ -181,7 +216,11 @@
   },
   {
     "id": 11,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Burnout 3: Takedown",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "23.39",
@@ -199,7 +238,11 @@
   },
   {
     "id": 12,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Fallout 2",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "32.61",
@@ -217,7 +260,10 @@
   },
   {
     "id": 13,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Undertale",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "30.98",
@@ -235,7 +281,11 @@
   },
   {
     "id": 14,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "League of Legends",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "43.33",
@@ -253,7 +303,11 @@
   },
   {
     "id": 15,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Mega Man 3",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "47.64",
@@ -271,7 +325,9 @@
   },
   {
     "id": 16,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Soulcalibur",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "44.39",
@@ -289,7 +345,11 @@
   },
   {
     "id": 17,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Thief II",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "15.81",
@@ -307,7 +367,10 @@
   },
   {
     "id": 18,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Metal Age",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "39.83",
@@ -325,7 +388,11 @@
   },
   {
     "id": 19,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "SimCity 2000",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "47.28",
@@ -343,7 +410,9 @@
   },
   {
     "id": 20,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Inside",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "44.94",
@@ -361,7 +430,10 @@
   },
   {
     "id": 21,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Tony Hawk's Pro Skater 2",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "37.47",
@@ -379,7 +451,9 @@
   },
   {
     "id": 22,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Monster Hunter: World",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "39.10",
@@ -397,7 +471,10 @@
   },
   {
     "id": 23,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Resident Evil 2",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "15.26",
@@ -415,7 +492,11 @@
   },
   {
     "id": 24,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "System Shock 2",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "34.74",
@@ -433,7 +514,9 @@
   },
   {
     "id": 25,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Grand Theft Auto: Vice City",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "19.67",
@@ -451,7 +534,9 @@
   },
   {
     "id": 26,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Persona 5",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "25.46",
@@ -469,7 +554,10 @@
   },
   {
     "id": 27,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Fortnite",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "15.77",
@@ -487,7 +575,11 @@
   },
   {
     "id": 28,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Fable 2",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "18.70",
@@ -505,7 +597,10 @@
   },
   {
     "id": 29,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "GoldenEye 007",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "28.14",
@@ -523,7 +618,9 @@
   },
   {
     "id": 30,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Super Smash Bros. Ultimate",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "19.56",
@@ -541,7 +638,10 @@
   },
   {
     "id": 31,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "The Elder Scrolls V: Skyrim",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "19.40",
@@ -559,7 +659,9 @@
   },
   {
     "id": 32,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "X-COM: UFO Defense",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "27.80",
@@ -577,7 +679,11 @@
   },
   {
     "id": 33,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Suikoden II",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "46.36",
@@ -595,7 +701,10 @@
   },
   {
     "id": 34,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Battlefield 1942",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "23.77",
@@ -613,7 +722,9 @@
   },
   {
     "id": 35,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Dota 2",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "40.70",
@@ -631,7 +742,11 @@
   },
   {
     "id": 36,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Mario Kart 8 Deluxe",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "20.27",
@@ -649,7 +764,9 @@
   },
   {
     "id": 37,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Star Wars Jedi Knight II: Jedi Outcast",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "39.75",
@@ -667,7 +784,10 @@
   },
   {
     "id": 38,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Spelunky",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "49.31",
@@ -685,7 +805,10 @@
   },
   {
     "id": 39,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Donkey Kong",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "35.14",
@@ -703,7 +826,11 @@
   },
   {
     "id": 40,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "The Sims",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "45.64",
@@ -721,7 +848,11 @@
   },
   {
     "id": 41,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Rock Band",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "33.97",
@@ -739,7 +870,11 @@
   },
   {
     "id": 42,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Red Dead Redemption 2",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "47.92",
@@ -757,7 +892,11 @@
   },
   {
     "id": 43,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Splinter Cell: Chaos Theory",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "41.44",
@@ -775,7 +914,10 @@
   },
   {
     "id": 44,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Super Mario World 2: Yoshi's Island",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "41.43",
@@ -793,7 +935,11 @@
   },
   {
     "id": 45,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Silent Hill 2",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "20.62",
@@ -811,7 +957,9 @@
   },
   {
     "id": 46,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Grand Theft Auto: San Andreas",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "50.74",
@@ -829,7 +977,11 @@
   },
   {
     "id": 47,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Mass Effect",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "40.19",
@@ -847,7 +999,9 @@
   },
   {
     "id": 48,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Call of Duty 4: Modern Warfare",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "15.27",
@@ -865,7 +1019,10 @@
   },
   {
     "id": 49,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Rise of the Tomb Raider",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "33.28",
@@ -883,7 +1040,9 @@
   },
   {
     "id": 50,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Batman: Arkham City",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "21.12",
@@ -901,7 +1060,10 @@
   },
   {
     "id": 51,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "The Witness",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "18.58",
@@ -919,7 +1081,9 @@
   },
   {
     "id": 52,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Journey",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "31.92",
@@ -937,7 +1101,9 @@
   },
   {
     "id": 53,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Uncharted 2: Among Thieves",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "34.15",
@@ -955,7 +1121,9 @@
   },
   {
     "id": 54,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Overwatch",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "30.85",
@@ -973,7 +1141,11 @@
   },
   {
     "id": 55,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Deus Ex",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "48.55",
@@ -991,7 +1163,9 @@
   },
   {
     "id": 56,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Baldur's Gate II: Shadows of Amn",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "20.25",
@@ -1009,7 +1183,10 @@
   },
   {
     "id": 57,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Ms. Pac-Man",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "44.29",
@@ -1027,7 +1204,10 @@
   },
   {
     "id": 58,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Counter-Strike 1.6",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "42.65",
@@ -1045,7 +1225,11 @@
   },
   {
     "id": 59,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Left 4 Dead 2",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "16.25",
@@ -1063,7 +1247,10 @@
   },
   {
     "id": 60,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "EarthBound",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "26.17",
@@ -1081,7 +1268,9 @@
   },
   {
     "id": 61,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Resident Evil",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "32.59",
@@ -1099,7 +1288,11 @@
   },
   {
     "id": 62,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Diablo II",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "19.71",
@@ -1117,7 +1310,9 @@
   },
   {
     "id": 63,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "StarCraft",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "26.12",
@@ -1135,7 +1330,11 @@
   },
   {
     "id": 64,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "World of Warcraft",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "40.14",
@@ -1153,7 +1352,9 @@
   },
   {
     "id": 65,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Star Wars: Knights of the Old Republic",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "34.16",
@@ -1171,7 +1372,11 @@
   },
   {
     "id": 66,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Fallout: New Vegas",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "39.67",
@@ -1189,7 +1394,11 @@
   },
   {
     "id": 67,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Final Fantasy VI",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "38.64",
@@ -1207,7 +1416,9 @@
   },
   {
     "id": 68,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Mass Effect 2",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "32.17",
@@ -1225,7 +1436,10 @@
   },
   {
     "id": 69,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Pokémon Yellow",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "26.27",
@@ -1243,7 +1457,9 @@
   },
   {
     "id": 70,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Bloodborne",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "28.28",
@@ -1261,7 +1477,10 @@
   },
   {
     "id": 71,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Metroid Prime",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "31.12",
@@ -1279,7 +1498,9 @@
   },
   {
     "id": 72,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Resident Evil 4",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "25.70",
@@ -1297,7 +1518,9 @@
   },
   {
     "id": 73,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Shadow of the Colossus",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "44.23",
@@ -1315,7 +1538,9 @@
   },
   {
     "id": 74,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Metal Gear Solid",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "22.51",
@@ -1333,7 +1558,10 @@
   },
   {
     "id": 75,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "God of War",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "32.57",
@@ -1351,7 +1579,9 @@
   },
   {
     "id": 76,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "The Witcher 3: Wild Hunt",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "30.58",
@@ -1369,7 +1599,10 @@
   },
   {
     "id": 77,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "BioShock",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "27.93",
@@ -1387,7 +1620,11 @@
   },
   {
     "id": 78,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Sid Meier's Civilization IV",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "17.59",
@@ -1405,7 +1642,9 @@
   },
   {
     "id": 79,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "The Legend of Zelda: Ocarina of Time",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "24.71",
@@ -1423,7 +1662,11 @@
   },
   {
     "id": 80,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Minecraft",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "19.41",
@@ -1441,7 +1684,9 @@
   },
   {
     "id": 81,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Halo: Combat Evolved",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "36.24",
@@ -1459,7 +1704,9 @@
   },
   {
     "id": 82,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Half-Life",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "19.40",
@@ -1477,7 +1724,9 @@
   },
   {
     "id": 83,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Metal Gear Solid 3: Snake Eater",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "33.85",
@@ -1495,7 +1744,11 @@
   },
   {
     "id": 84,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "The Last of Us",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "15.63",
@@ -1513,7 +1766,9 @@
   },
   {
     "id": 85,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Doom",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "19.74",
@@ -1531,7 +1786,9 @@
   },
   {
     "id": 86,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Chrono Trigger",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "35.93",
@@ -1549,7 +1806,10 @@
   },
   {
     "id": 87,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Portal",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "37.14",
@@ -1567,7 +1827,9 @@
   },
   {
     "id": 88,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Dark Souls",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "43.98",
@@ -1585,7 +1847,9 @@
   },
   {
     "id": 89,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Street Fighter II",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "27.23",
@@ -1603,7 +1867,9 @@
   },
   {
     "id": 90,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Super Mario Bros.",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "35.96",
@@ -1621,7 +1887,10 @@
   },
   {
     "id": 91,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Halo 2",
     "imgSrc": "https://i.pinimg.com/564x/9a/83/71/9a83710f141c4977af1b4630546f2f1d.jpg",
     "price": "48.79",
@@ -1639,7 +1908,11 @@
   },
   {
     "id": 92,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Castlevania: Symphony of the Night",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "27.10",
@@ -1657,7 +1930,9 @@
   },
   {
     "id": 93,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "Grand Theft Auto V",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "47.80",
@@ -1675,7 +1950,11 @@
   },
   {
     "id": 94,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Super Mario 64",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "33.71",
@@ -1693,7 +1972,11 @@
   },
   {
     "id": 95,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Red Dead Redemption",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "21.45",
@@ -1711,7 +1994,11 @@
   },
   {
     "id": 96,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Half-Life 2",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "21.65",
@@ -1729,7 +2016,10 @@
   },
   {
     "id": 97,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Tetris",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "49.10",
@@ -1747,7 +2037,10 @@
   },
   {
     "id": 98,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Super Mario Bros. 3",
     "imgSrc": "https://i.pinimg.com/564x/ad/ba/a4/adbaa41b81502bad7de3c24727d19560.jpg",
     "price": "45.80",
@@ -1765,7 +2058,9 @@
   },
   {
     "id": 99,
-    "category": ["ps"],
+    "category": [
+      "ps"
+    ],
     "title": "The Legend of Zelda: Breath of the Wild",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "24.86",
@@ -1783,7 +2078,9 @@
   },
   {
     "id": 100,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "Super Metroid",
     "imgSrc": "https://i.pinimg.com/564x/16/cd/2b/16cd2b9754498971e80a53c3925c7c97.jpg",
     "price": "31.24",
@@ -1801,7 +2098,11 @@
   },
   {
     "id": 101,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Portal 2",
     "imgSrc": "https://i.pinimg.com/564x/a2/60/3a/a2603a2e81105cb1f6b5e39f77fdf953.jpg",
     "price": "34.93",
@@ -1819,7 +2120,9 @@
   },
   {
     "id": 102,
-    "category": ["xbox"],
+    "category": [
+      "xbox"
+    ],
     "title": "The Legend of Zelda: A Link to the Past",
     "imgSrc": "https://i.pinimg.com/564x/3b/f7/c6/3bf7c6a4d52505ede9e3582480d62545.jpg",
     "price": "29.84",
@@ -1837,7 +2140,11 @@
   },
   {
     "id": 103,
-    "category": ["xbox", "ps", "pc"],
+    "category": [
+      "xbox",
+      "ps",
+      "pc"
+    ],
     "title": "Super Mario World",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "30.38",
@@ -1855,7 +2162,10 @@
   },
   {
     "id": 104,
-    "category": ["xbox", "pc"],
+    "category": [
+      "xbox",
+      "pc"
+    ],
     "title": "Ring Of Revolution",
     "imgSrc": "https://i.pinimg.com/564x/4e/e4/b4/4ee4b45963b6e6b84b8c1a02eebb7fdd.jpg",
     "price": "39.55",

@@ -21,8 +21,11 @@ type CartState = CartData[] | null
 
 const initialState: CartState = null
 
-// eslint-disable-next-line default-param-last
-export default function userCart(state = initialState, action: UserCartAction) {
+export default function cartReducer(
+  // eslint-disable-next-line default-param-last
+  state = initialState,
+  action: UserCartAction
+) {
   switch (action.type) {
     case ADD_TO_CART: {
       if (state) {

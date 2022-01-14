@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./home.scss"
 import GameCard from "components/game-card/GameCard"
+import { Game } from "types"
 import { PRODUCTS_PAGE } from "../../routes"
-import { Game } from "../../types/index"
 
 type Props = {
   games: Game[]
@@ -52,10 +52,12 @@ const Home = ({ games }: Props) => (
     <section className="games_container items_container">
       <div className="catagories_container__title">New games</div>
       <div className="games_container__items">
-        {games.length ? (
+        {games?.length ? (
           games.map((game) => <GameCard key={game.id} game={game} />)
         ) : (
-          <p>The server is down! Try again later.</p>
+          <p className="games_container__error">
+            The server is down! Try again later.
+          </p>
         )}
       </div>
     </section>

@@ -27,7 +27,6 @@ type ModifiedUserData = {
   fields: string
 }
 
-// eslint-disable-next-line default-param-last
 export const userReducer = (
   // eslint-disable-next-line default-param-last
   state: null | UserData = null,
