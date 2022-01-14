@@ -62,12 +62,10 @@ const EditCard = () => {
         category: [...prev.category, target.value],
       }))
     } else {
-      const oldCategory = [...newGame.category]
-      const updatedCategory = oldCategory.filter((cat) => cat !== target.value)
-      setNewGame({
-        ...newGame,
-        category: updatedCategory,
-      })
+      setNewGame((prev) => ({
+        ...prev,
+        category: prev.category.filter((cat) => cat !== target.value),
+      }))
     }
   }
 

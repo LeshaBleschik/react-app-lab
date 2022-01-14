@@ -54,12 +54,10 @@ const CreateCard = () => {
         category: [...prev.category, target.value],
       }))
     } else {
-      const oldCategory = [...card.category]
-      const updatedCategory = oldCategory.filter((cat) => cat !== target.value)
-      setCard({
-        ...card,
-        category: updatedCategory,
-      })
+      setCard((prev) => ({
+        ...prev,
+        category: prev.category.filter((cat) => cat !== target.value),
+      }))
     }
   }
 
@@ -197,7 +195,7 @@ const CreateCard = () => {
           <label htmlFor="pc" className="card_creation__label">
             PC
           </label>
-          <input
+          <Input
             type="checkbox"
             id="pc"
             name="platform"
@@ -210,7 +208,7 @@ const CreateCard = () => {
           <label htmlFor="ps" className="card_creation__label">
             Playstation 5
           </label>
-          <input
+          <Input
             type="checkbox"
             id="ps"
             name="platform"
@@ -223,7 +221,7 @@ const CreateCard = () => {
           <label htmlFor="xbox" className="card_creation__label">
             XBox One
           </label>
-          <input
+          <Input
             type="checkbox"
             id="xbox"
             name="platform"

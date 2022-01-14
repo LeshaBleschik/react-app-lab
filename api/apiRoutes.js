@@ -90,7 +90,7 @@ router.delete(`/products/:id`, (req, res) => {
   let listOfGames = getGames()
   const { id } = req.params
   listOfGames = listOfGames.filter((game) => game.id !== +id)
-  writeFile("games.json", [...listOfGames])
+  writeFile("games.json", listOfGames)
   res.status(200).send(getGames())
 })
 
@@ -109,7 +109,7 @@ router.put(`/products`, (req, res) => {
     foundGame.genre = genre
     foundGame.category = category
   }
-  writeFile("games.json", [...listOfGames])
+  writeFile("games.json", listOfGames)
   res.status(200).send(getGames())
 })
 
