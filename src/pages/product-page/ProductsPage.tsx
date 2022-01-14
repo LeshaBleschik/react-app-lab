@@ -4,37 +4,41 @@ import { debounce } from "lodash"
 import { PRODUCTS_PAGE } from "routes"
 import axios from "axios"
 import GameCard from "components/game-card/GameCard"
-import { Game } from "types"
 import { PRODUCTS_SEARCH } from "api/constants"
 import "./product-page.scss"
+import { setGame } from "redux/actions"
+import { useDispatch, useSelector } from "react-redux"
+import { getGameSelector } from "redux/selectors"
+import { Game } from "types"
 
 const ProductsPage = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const search = new URLSearchParams(location.search)
+  const games = useSelector(getGameSelector)
   const category = search.get("category")
   const categoryTitle = "Filter"
 
   const useFetchData = (url: string) => {
-    const [searchGames, setSearchGames] = useState<Game[]>([])
     const [isLoading, setIsLoading] = useState<boolean>(false)
+    const dispatch = useDispatch()
 
     useEffect((): void => {
       setIsLoading(true)
       axios
         .get(url)
         .then((response) => {
-          setSearchGames(response.data)
+          dispatch(setGame(response.data))
           setIsLoading(false)
         })
         .catch((error) => {
           console.log(error)
         })
     }, [location.search])
-    return { searchGames, isLoading, setIsLoading }
+    return { isLoading, setIsLoading }
   }
 
-  const { searchGames, isLoading, setIsLoading } = useFetchData(
+  const { isLoading, setIsLoading } = useFetchData(
     `${PRODUCTS_SEARCH}${location.search}`
   )
 
@@ -219,12 +223,10 @@ const ProductsPage = () => {
           {isLoading ? (
             <i className="fas fa-sync-alt products__search_icon" />
           ) : (
-            searchGames.length &&
-            searchGames.map((game) => <GameCard key={game.id} game={game} />)
+            games?.length &&
+            games.map((game: Game) => <GameCard key={game.id} game={game} />)
           )}
-          {!searchGames.length && (
-            <p className="products__error">No result found</p>
-          )}
+          {!games?.length && <p className="products__error">No result found</p>}
         </div>
       </div>
     </section>

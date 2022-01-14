@@ -4,10 +4,14 @@ import { HOME_PAGE, ABOUT_PAGE, PRODUCTS_PAGE, CART_PAGE } from "routes"
 import { useNavigate } from "react-router"
 import "./header.scss"
 import { useDispatch, useSelector } from "react-redux"
-import { deleteCart, removeUser } from "redux/actions"
+import { deleteCart, removeAdmin, removeUser } from "redux/actions"
 import { DELETE_TOKEN } from "api/constants"
 import axios from "axios"
-import { getCartSelector, getUserSelector } from "redux/selectors"
+import {
+  getAdminSelector,
+  getCartSelector,
+  getUserSelector,
+} from "redux/selectors"
 
 type HeaderProps = {
   signInOpenClick: () => void
@@ -17,6 +21,7 @@ type HeaderProps = {
 const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
   const user = useSelector(getUserSelector)
   const cart = useSelector(getCartSelector)
+  const admin = useSelector(getAdminSelector)
   const dispatch = useDispatch()
   const [isActive, setIsActive] = useState(false)
   const [product, setProduct] = useState(0)
@@ -44,6 +49,9 @@ const Header = ({ signInOpenClick, signUpOpenClick }: HeaderProps) => {
     localStorage.clear()
     dispatch(removeUser())
     dispatch(deleteCart())
+    if (admin) {
+      dispatch(removeAdmin())
+    }
     setProduct(0)
     navigate("/", { replace: true })
   }

@@ -18,14 +18,11 @@ import {
 import { Game } from "types"
 import { useDispatch } from "react-redux"
 import { setUser } from "redux/actions"
-import ConfirmMesage from "components/confirm-modal/ConfirmMesage"
+// eslint-disable-next-line import/no-named-as-default-member
+import Modal from "components/modal/Modal"
 import CartPage from "pages/cart-page/CartPage"
 import ProtectedRoute from "components/protected-route/ProtectedRoute"
 import Profile from "pages/profile-page/Profile"
-import ChangePassword from "components/change-password/ChangePassword"
-import SignIn from "components/sign-in/SignIn"
-import Registration from "components/registration/Registration"
-import Modal from "components/modal/Modal"
 import SearchBar from "components/search-bar/SearchBar"
 import ProductsPage from "pages/product-page/ProductsPage"
 import Header from "./components/header/Header"
@@ -99,24 +96,16 @@ const App = () => {
       />
       <div className="content-wrapper">
         <SearchBar />
-        <Modal signInIsOpen={signInIsOpen} signInOnClose={signInOnClose}>
-          <SignIn signInOnClose={signInOnClose} />
-        </Modal>
-        <Modal signUpIsOpen={signUpIsOpen} signUpOnClose={signUpOnClose}>
-          <Registration signUpOnClose={signUpOnClose} />
-        </Modal>
         <Modal
+          signInIsOpen={signInIsOpen}
+          signInOnClose={signInOnClose}
+          signUpIsOpen={signUpIsOpen}
+          signUpOnClose={signUpOnClose}
           passwordIsOpen={passwordIsOpen}
           passwordClickToggle={passwordClickToggle}
-        >
-          <ChangePassword passwordClickToggle={passwordClickToggle} />
-        </Modal>
-        <Modal
           confirmIsOpen={confirmIsOpen}
           confirmWindowToggle={confirmWindowToggle}
-        >
-          <ConfirmMesage />
-        </Modal>
+        />
         <Routes>
           <Route path={HOME_PAGE} element={<Home games={games} />} />
           <Route path={ABOUT_PAGE} element={<About />} />

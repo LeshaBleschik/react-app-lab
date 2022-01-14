@@ -10,6 +10,9 @@ type InputProps = {
   value?: string | number
   autocomplete?: string
   maxLength?: number
+  min?: number
+  max?: number
+  defaultChecked?: boolean
 }
 
 const Input = ({
@@ -22,6 +25,9 @@ const Input = ({
   value,
   autocomplete,
   maxLength,
+  min,
+  max,
+  defaultChecked,
 }: InputProps) => (
   <input
     type={type}
@@ -33,6 +39,9 @@ const Input = ({
     value={value}
     autoComplete={autocomplete}
     maxLength={maxLength}
+    min={min}
+    max={max}
+    defaultChecked={defaultChecked}
   />
 )
 
@@ -46,6 +55,9 @@ Input.defaultProps = {
   name: "",
   id: "",
   placeholder: "",
+  min: 0,
+  max: 0,
+  defaultChecked: false,
 }
 
 export default Input

@@ -166,5 +166,13 @@
     "password": "Vertolet48",
     "tokens": [],
     "fields": ""
+  },
+  {
+    "userName": "Admin",
+    "password": "Admin123",
+    "tokens": [
+      "54172b7b-47b2-4be9-9987-4514a8c85a50"
+    ],
+    "fields": ""
   }
 ]

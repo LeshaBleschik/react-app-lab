@@ -2,19 +2,37 @@ import Button from "elements/button/Button"
 import React from "react"
 import { CartData, Game } from "types"
 import { useSelector, useDispatch } from "react-redux"
-import { addToCart } from "redux/actions"
+import { addGameInfo, addToCart, editCardOpen } from "redux/actions"
 import "./game-card.scss"
-import { getCartSelector, getUserSelector } from "redux/selectors"
+import {
+  getAdminSelector,
+  getCartSelector,
+  getUserSelector,
+} from "redux/selectors"
+import { useLocation } from "react-router"
+import { PRODUCTS_PAGE } from "routes"
 
 type Props = {
   game: Game
 }
 
 const GameCard = ({
-  game: { title, price, imgSrc, description, ageAllowed, category, rating, id },
+  game: {
+    title,
+    price,
+    imgSrc,
+    description,
+    ageAllowed,
+    category,
+    rating,
+    id,
+    genre,
+  },
 }: Props) => {
   const user = useSelector(getUserSelector)
   const cart = useSelector(getCartSelector)
+  const admin = useSelector(getAdminSelector)
+  const location = useLocation()
   const dispatch = useDispatch()
 
   const addCart = () => {
@@ -29,12 +47,27 @@ const GameCard = ({
       if (!cart) {
         dispatch(addToCart(cartData))
       } else {
-        const foundItem = cart.find((item: CartData) => id === item.id)
+        const foundItem = cart.find((cartItem: CartData) => id === cartItem.id)
         if (!foundItem) {
           dispatch(addToCart(cartData))
         }
       }
     }
+  }
+
+  const editHandler = () => {
+    dispatch(editCardOpen())
+    const actualGameInfo = {
+      id,
+      name: title,
+      image: imgSrc,
+      genre,
+      price,
+      description,
+      age: ageAllowed,
+      category,
+    }
+    dispatch(addGameInfo(actualGameInfo))
   }
 
   return (
@@ -74,11 +107,28 @@ const GameCard = ({
         <div className="card_wrapper__back_side">
           <p className="card_wrapper__game_info">{description}</p>
           <div className="card_wrapper__age">{`${ageAllowed}+`}</div>
-          <Button
-            className="card_wrapper__buy_btn"
-            title="Add to cart"
-            onClick={addCart}
-          />
+          <div className="card_wrapper__btn_group">
+            {admin && location.pathname === PRODUCTS_PAGE ? (
+              <>
+                <Button
+                  className="card_wrapper__buy_btn"
+                  title="Add to cart"
+                  onClick={addCart}
+                />
+                <Button
+                  className="card_wrapper__edit_btn"
+                  title="Edit"
+                  onClick={editHandler}
+                />
+              </>
+            ) : (
+              <Button
+                className="card_wrapper__buy_btn"
+                title="Add to cart"
+                onClick={addCart}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,13 @@
 import express from "express"
 import { v4 as uuidv4 } from "uuid"
-import { getGames, writeFile, currentData, upload } from "./helpers.js"
+import {
+  getGames,
+  writeFile,
+  currentData,
+  upload,
+  randomInteger,
+  createGameRating,
+} from "./helpers.js"
 
 const router = express.Router()
 const currentUserData = currentData()
@@ -55,6 +62,55 @@ router.get(`/products`, (req, res) => {
     listOfGames = listOfGames.filter((game) => game.ageAllowed === +age)
   }
   res.send(listOfGames)
+})
+
+// CREATE NEW GAME
+router.post(`/products`, (req, res) => {
+  const listOfGames = getGames()
+  const { title, image, price, description, age, rating, genre, category } =
+    req.body
+  const newGame = {
+    id: listOfGames.length + 1,
+    title,
+    category,
+    imgSrc: image,
+    price,
+    description,
+    ageAllowed: +age,
+    releaseDate: randomInteger(1350000000000, 1400000000000),
+    rating: createGameRating(rating),
+    genre,
+  }
+  writeFile("games.json", [...listOfGames, newGame])
+  res.status(200).send(getGames())
+})
+
+// DELETE GAME
+router.delete(`/products/:id`, (req, res) => {
+  let listOfGames = getGames()
+  const { id } = req.params
+  listOfGames = listOfGames.filter((game) => game.id !== +id)
+  writeFile("games.json", [...listOfGames])
+  res.status(200).send(getGames())
+})
+
+// MODIFY GAME
+router.put(`/products`, (req, res) => {
+  const listOfGames = getGames()
+  const { title, image, price, description, age, genre, category, id } =
+    req.body
+  const foundGame = listOfGames.find((game) => game.id === id)
+  if (foundGame) {
+    foundGame.title = title
+    foundGame.imgSrc = image
+    foundGame.price = price
+    foundGame.description = description
+    foundGame.ageAllowed = +age
+    foundGame.genre = genre
+    foundGame.category = category
+  }
+  writeFile("games.json", [...listOfGames])
+  res.status(200).send(getGames())
 })
 
 // REGISTRATION
